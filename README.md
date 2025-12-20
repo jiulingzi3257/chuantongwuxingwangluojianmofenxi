@@ -26,16 +26,19 @@
     快速开始：
 步骤 1：基础网络验证，初步验证五行节点的基础拓扑关系：
 [五行核心基础网络框架.py](https://github.com/user-attachments/files/24271805/default.py)
-后续计划：
-步骤 2：构建多层嵌套字典 基于 pandas 解析节点表，生成适配网络分析的多层嵌套字典（按维度 - 节点 - 属性分层）
+    
+    后续计划：
+步骤 2：构建多层嵌套字典
+基于 pandas 解析节点表，生成适配网络分析的多层嵌套字典（按维度 - 节点 - 属性分层）
 步骤 3：利用邵雍八卦万物类象进行本地预演：
 安装准备：pip install scikit-learn python-lovain
 步骤 4：接入AI模型：
 开发建议：
 可借用doubao-seed-1-6-thinking-250615、doubao-pro-32k
 调用API示例：
-from volcenginesdkarkruntime import Ark 
-client = Ark(api_key="your_api_key") response 
+从 volcenginesdkarkruntime 导入 Ark
+client = Ark(api_key="你的_api_key")
+
 = client.chat.completions.create( model="your_endpoint_id", messages=[{"role": "user", "content": "分析网络拓扑结构..."}] )
 
 ## 项目依赖：
