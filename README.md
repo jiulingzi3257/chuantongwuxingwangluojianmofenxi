@@ -24,80 +24,8 @@
 
 ## 2. 核心流程实操
     快速开始：
-步骤 1：基础网络验证 初步验证五行节点的基础拓扑关系：
-导入 networkx 作为 nx
-从 pyvis.network 导入 Network
-
-#1. 核心: 五行节点
-five_elements=["木","火","土","金","水"]
-
-#2.基础关系边(用列表存储(起点,终点,关系边,权重))
-底边边缘=[
-    # 生关系
-    ("木", "火", "生", 1.0),
-    ( "火", "土", "生", 1.0),
-    ( "土", "金", "生", 1.0),
-    ( "金", "水", "生", 1.0),
-    ("水", "木", "生", 1.0),
-    # 克关系
-    ("木", "土", "克", -0.5),
-    ("土", "水", "克", -0.5),
-    ("水", "火", "克", -0.5),
-    ("火","金","克",-0.5),
-    ("金", "木", "克", -0.5),
-    #泄关系(生关系的反向，属于弱干扰)
-    ("火", "木", "泄", -0.8),
-    ("土","火","泄",-0.8),
-    ( "金", "土", "泄", -0.8),
-    ("水", "金", "泄", -0.8),
-    ("木", "水", "泄", -0.8),
-    #耗关系（克关系的反向，属于弱干扰）
-    ("土", "木", "耗", -1.0),
-    ("水", "土", "耗", -1.0),
-    ("火", "水", "耗", -1.0),
-    ( "金", "火", "耗", -1.0),
-    ("木","金","耗",-1.0),
-
-输入：]
-
-#3.初始化有向图
-G=nx.DiGraph()
-
-#4.添加核心节点（可给节点加维度属性，比如核心节点标为“核心-五行”）
-对于五元素中的元素：
-    G.add_node(elem,category="核心-五行",color="#FF6B6B")#节点颜色自定义
-    
-#5. 添加基础关系边: 遍历列表(边的属性、关系类型、权重)
-    对于起始点，终点，关系类型，权重 in 基础边：
-        #给不同关系边设不同颜色，方便区分
-        edge_color="#4ECDC4"if weight>0 else"#FF9F43"
-        G.add_edge(
-            start,end,
-            relationship=rel_type,
-            weight=weight,
-            color=edge_color,
-            width=abs(weight)*2
-        )
-
-#6.动态可视化有向图（生成HTML文件，打开后可拖拽节点、hover看属性）
-net=Network(notebook=False,directed=True,height="800px",width="100%")
-net.from_nx(G)
-
-#调节节点标签显示（hover时显示“节点名+类别+边属性”）
-for node in net.nodes:
-    node["title"]=f"节点:﹛node['id']﹜\n类别:﹛node['category']﹜"
-    for edge in net.edges:
-        start=edge["from"]
-        end=edge["to"]
-        nx_edges=G.get_edge_data(start,end) #取同一对节点的所有边
-
-        edge_attr=next(iter(nx_edges.values()))
-        edge["title"]=f"关系:﹛edge_attr['relationship']﹜\n权重:﹛edge_attr['weight']﹜﹜"
-
-#保存并打开动态图
-net.save_graph("五行核心基础网络框架.html")
-print("基础网络框架已生成,可打开html文件查看!")
-
+步骤 1：基础网络验证，初步验证五行节点的基础拓扑关系：
+[五行核心基础网络框架.py](https://github.com/user-attachments/files/24271805/default.py)
 后续计划：
 步骤 2：构建多层嵌套字典 基于 pandas 解析节点表，生成适配网络分析的多层嵌套字典（按维度 - 节点 - 属性分层）
 步骤 3：利用邵雍八卦万物类象进行本地预演：
