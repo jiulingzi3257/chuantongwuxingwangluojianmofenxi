@@ -33,14 +33,19 @@
 
 ### 2. 核心流程实操
 快速开始：
-步骤 1：基础网络验证，初步验证五行节点的基础拓扑关系： python -m pip install networkx pyvis pandas openpyxl openai numpy 五行核心基础网络框架.py
+步骤 91：基础网络验证，初步验证五行节点的基础拓扑关系： python -m pip install networkx pyvis pandas openpyxl openai numpy 五行核心基础网络框架.py
 
-后续计划： 步骤 2：构建多层嵌套字典 基于pandas解析节点表，生成适配网络分析的多层嵌套字典（按维度 - 节点 - 多维属性分层） 步骤 3：利用邵雍八卦万物类象进行本地预演：小世界网络建模分析，配合svn/knw算法分类对基础网络结构进行验证，如果实在不行才用随机森林算法。 安装准备：pip install scikit-learn python-lovain 步骤 4：接入AI模型： 开发建议： 可借用doubao-seed-1-6-thinking-250615、doubao-pro-32k 调用API示例： 从 volcenginesdkarkruntime 导入 Ark client = Ark(api_key="你的_api_key")
+后续计划： 步骤 2：构建多层嵌套字典 基于pandas解析节点表，生成适配网络分析的多层嵌套字典（按维度 - 节点 - 多维属性分层） 步骤 3：利用邵雍八卦万物类象进行本地预演：小世界网络建模分析，配合svn/knw算法分类对基础网络结构进行验证，如果实在不行才用随机森林算法。 安装准备：pip install scikit-learn python-lovain 步骤 4：接入AI模型： 开发建议： 可借用doubao-seed-1-6-thinking-250615、doubao-pro-32k 、QClaw）（claw.guanjia.qq.com）
+调用API示例： 从 volcenginesdkarkruntime 导入 Ark client = Ark(api_key="你的_api_key")
 
 = client.chat.completions.create( model="your_endpoint_id", messages=[{"role": "user", "content": "分析网络拓扑结构..."}] )
 
+
 项目依赖：
-数据清洗与处理 MarkltDown、pandas、numpy  网络建模 ：networkx 可视化： matplotlib（可自选）、seaborn（可自选）、pyvis 深度学习： DGL、PyTorch Geometric（可自选） 全网检索与对接：requests、openai-python （可自选）
+数据清洗与处理 MarkltDown、pandas、numpy  网络建模 ：networkx 、gephi（可自选）
+可视化： matplotlib（可自选）、seaborn（可自选）、pyvis 
+深度学习： DGL、PyTorch Geometric（可自选） 
+全网检索与对接：requests、openai-python （可自选）
 古汉语大模型-AI太炎
 
 ## MarkltDown数据清洗阶段统一分隔符快速开始：
