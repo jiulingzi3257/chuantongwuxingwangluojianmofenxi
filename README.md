@@ -45,11 +45,16 @@
 
 
 ### 项目依赖：
-1.数据清洗与处理 MarkltDown、pandas、numpy  
+1.数据清洗与处理 MarkltDown、pandas（openpyxl）、numpy  
+
 2.网络建模 ：networkx 、gephi（可自选）
+
 3.可视化： matplotlib（可自选）、seaborn（可自选）、pyvis 
+
 4.深度学习： DGL、PyTorch Geometric（可自选） 
+
 5.全网检索与对接：requests、openai-python （可自选）
+
 ai：古汉语大模型-AI太炎
 
 
