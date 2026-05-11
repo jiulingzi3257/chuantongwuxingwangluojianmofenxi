@@ -5,6 +5,13 @@
 ## 介绍:
 这是一个用网络科学和python对中国传统五行以及传统罗盘进行网络建模分析的跨学科开源项目，其中，五行万物类象节点表，第一列为节点名称/类型/维度编号，第一行为标题，第二行为核心节点，部分复杂关系节点的多层属性已经用标点符号和空格分隔，是我基于邵雍的系统思维启发，已经按维度（天S、地D、人R）对关系节点进行编号和横向分布，除五个核心外，其余大部分关系节点均可能存在属性爆炸，鉴于此，咱们就先做一番基础网络验证，而后用pandas库创多层嵌套字典，接着咱们尝试用邵雍的八卦万物类象做完本地预演，最后，各位还可接入AI模型API进行训练。
 核心目标是通过Python量化建模，解构传统五行万物类象、罗盘方位体系的复杂关系网络，验证其系统关联性，并提供从基础网络分析到AI模型接入的全流程实操方案。
+
+**This project builds a dynamic network model of the Zhouyi (Yijing, 易经) system based on network science, aiming to deconstruct the native logic of Chinese Axial Age philosophy. The modeling framework extends beyond the Zhouyi to encompass the broader categorical correspondence systems (wanwu leixiang, 万物类象) of the Wuxing (五行, Five Phases) and compass traditions.**
+**本项目基于网络科学构建了《周易》（《易经》）系统的动态网络模型，旨在解构中国轴心时代哲学的内在逻辑。该建模框架不仅限于《周易》，还涵盖了五行（五行，Five Phases）和指南针传统中更广泛的分类对应系统（万物类象，wanwu leixiang）.**
+
+**Peers from digital humanities, network science, Sinology, and philosophy are warmly welcomed to contribute suggestions, critiques, or collaborations.**
+**我们热烈欢迎来自数字人文、网络科学、汉学和哲学领域的同行提出建议、批评或合作。**
+
 ## 核心特色
 1. **跨学科融合**：网络科学方法论 + 传统五行/罗盘体系 + Python数据工程； 
 2. **分层节点设计**：核心节点（五行：金木水火土）+ 多层属性节点（万物类象），通过标点/空格分隔复杂属性，适配网络建模；
@@ -62,6 +69,13 @@ client = Ark(api_key="你的_api_key")
 深度学习：	DGL、PyTorch Geometric（可自选）
 全网检索与对接：requests、openai-python  （可自选）  
 古汉语大模型-AI太炎
+
+
+国内学术，想深入了解者请走镜像：https://gitee.com/intellectualdisability-of-jun-sen/chuantongwuxingwangluojianmofenxi
+
+
+**欢迎各位同行提出建议、交流协作。国际同行可通过 GitHub Issues 提交英文反馈，我会以中文+简短英文回复。**
+**International peers are welcome to submit feedback, bug reports, or collaboration inquiries via GitHub Issues. I will respond in English or bilingual format. For longer discussions related to classical text exegesis or network modeling methodology, feel free to reference the relevant literature nodes and edge tables in the data/ directory.**
 
    
 
