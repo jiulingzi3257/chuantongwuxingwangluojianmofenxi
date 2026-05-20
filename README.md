@@ -1,6 +1,9 @@
 [五行核心基础网络框架.py](https://github.com/user-attachments/files/24835273/default.py)[五行核心基础网络框架.py](https://github.com/user-attachments/files/24835153/default.py)
 [五行核心基础网络框架.py](https://github.com/user-attachments/files/24835164/default.py)
 
+### 语言说明 / Language Note
+**本仓库文档主体为简体中文（方便国内用户阅读），关键声明、核心术语均提供中英双语对照，符合数字人文领域国际协作规范。**
+**The main body of the read file in this repository is in Simplified Chinese (for ease of reading by domestic users), with key statements and core terms provided in both Chinese and English, in accordance with international collaboration norms in the field of digital humanities.**
 
 ## 介绍:
 这是一个用网络科学和python对中国传统五行以及传统罗盘进行网络建模分析的跨学科开源项目，其中，五行万物类象节点表，第一列为节点名称/类型/维度编号，第一行为标题，第二行为核心节点，部分复杂关系节点的多层属性已经用标点符号和空格分隔，是我基于邵雍的系统思维启发，已经按维度（天S、地D、人R）对关系节点进行编号和横向分布，除五个核心外，其余大部分关系节点均可能存在属性爆炸，鉴于此，咱们就先做一番基础网络验证，而后用pandas库创多层嵌套字典，接着咱们尝试用邵雍的八卦万物类象做完本地预演，最后，各位还可接入AI模型API进行训练。
@@ -49,16 +52,25 @@ python -m pip install networkx pyvis pandas openpyxl openai numpy
 
 
 后续计划：
+Subsequent Plans
 步骤 2：构建多层嵌套字典
+Step 2: Construct multi-level nested dictionaries
+Parse the node table based on pandas to generate multi-level nested dictionaries adapted for network analysis (layered by dimension-node-attribute).
 基于pandas解析节点表，生成适配网络分析的多层嵌套字典（按维度 - 节点 - 属性分层）
 步骤 3：利用邵雍八卦万物类象进行本地预演：
+Step 3: Conduct local pre-simulation by applying Shao Yong's Eight Trigrams analogous in appearance of All Things:
 安装准备：pip install scikit-learn python-lovain
 步骤 4：接入AI模型：
+Step 4: Integrate AI model
 开发建议：
-可借用doubao-seed-1-6-thinking-250615、doubao-pro-32k
-调用API示例：
-从 volcenginesdkarkruntime 导入 Ark
-client = Ark(api_key="你的_api_key")
+Development suggestions:
+可借用doubao-seed-1-6-thinking-250615、doubao-pro-32k大模型
+Borrowable doubao-seed-1-6-thinking-250615、doubao-pro-32k large model
+调用API示例(python)：
+Example of calling APU:
+
+form volcenginesdkarkruntime import Ark
+client = Ark(api_key="your_api_key")
 
 = client.chat.completions.create( model="your_endpoint_id", messages=[{"role": "user", "content": "分析网络拓扑结构..."}] )
 
@@ -81,10 +93,12 @@ DeepSeek开放数据平台：https://platform.deepseek.com/usage
 
 
 **欢迎各位同行提出建议、交流协作。国际同行可通过 GitHub Issues 提交英文反馈，我会以中文+简短英文回复。**
-**International peers are welcome to submit feedback, bug reports, or collaboration inquiries via GitHub Issues. I will respond in English or bilingual format. For longer discussions related to classical text exegesis or network modeling methodology, feel free to reference the relevant literature nodes and edge tables in the data/ directory.**
+**International peers are welcome to submit feedback, bug reports, or collaboration inquiries via GitHub Issues. I will respond in English or bilingual format. For longer discussions related to classical text exegesis or network modeling methodology, feel free to reference the relevant literature nodes and edge tables in the data/ directory.Or conduct in-depth discussions through GitHub discussion**
 
-   
+### 开源协议 / Open Source License
 
+**This project is open-sourced under the [CC0-1.0 Open Source License], and you are free to use, modify, and distribute the resources of this project in accordance with the terms of the license.**
+**本项目采用 [CC0-1.0开源协议] 开源，您可遵循协议条款自由使用、修改和分发本项目资源。**
 
 
 
