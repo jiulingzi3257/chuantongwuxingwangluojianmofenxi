@@ -45,9 +45,11 @@
 
 
 ## 2. 核心流程实操
-    快速开始：
+快速开始：
 步骤 1：基础网络验证，初步验证五行节点的基础拓扑关系：
-python -m pip install networkx pyvis pandas openpyxl openai numpy
+
+      python -m pip install networkx pyvis pandas openpyxl openai numpy
+      
 [五行核心基础网络框架.py](https://github.com/user-attachments/files/24835386/default.py)
 
 
@@ -63,46 +65,47 @@ Parse the node table based on pandas to generate multi-level nested dictionaries
 Step 3: Conduct local pre-simulation by applying Shao Yong's Eight Trigrams analogous in appearance of All Things:
 
 Preparation for installing Python libraries:
-安装准备：pip install scikit-learn python-lovain
+安装准备：
+      
+      pip install scikit-learn python-lovain
 
 步骤 4：接入AI模型：
 Step 4: Integrate AI model
 开发建议：
 Development suggestions:
+
 可借用doubao-seed-1-6-thinking-250615、doubao-pro-32k大模型
 Borrowable doubao-seed-1-6-thinking-250615、doubao-pro-32k large model
 
 调用API示例(python)：
 Example of calling APU:
 
-pip install volcenginesdkarkruntime
+     pip install volcenginesdkarkruntime
 
 official example:
 官方示例：
 
-form volcenginesdkarkruntime import Ark
-client = Ark(api_key="your_api_key")= client.chat.completions.create( model="your_endpoint_id", messages=[{"role": "user", "content": "分析网络拓扑结构..."}] )
+     form volcenginesdkarkruntime import Ark
+     client = Ark(api_key="your_api_key")= client.chat.completions.create( model="your_endpoint_id", messages=[{"role": "user", "content": "分析网络拓扑结构..."}] )
 
-完整版:
-Example of calling APU in the full version
+ 完整版:
+**Example of calling APU in the full version:**
 
-# 1. 导入依赖库
-from volcenginesdkarkruntime import Ark
-from volcenginesdkarkruntime.errors import ArkError
-import json  # 可选：若需要结构化输出时使用
-
-# 2. 初始化Ark客户端（核心配置）
-def init_ark_client(api_key: str):
-    """初始化Ark客户端"""
+    # 1. 导入依赖库
+    from volcenginesdkarkruntime import Ark
+    from volcenginesdkarkruntime.errors import ArkError
+    import json  # 可选：若需要结构化输出时使用
+    # 2. 初始化Ark客户端（核心配置）
+    def init_ark_client(api_key: str):
+    初始化Ark客户端
     try:
         client = Ark(api_key=api_key)
         return client
     except Exception as e:
         print(f"客户端初始化失败：{str(e)}")
         return None
-
-# 3. 构造拓扑分析的Prompt（结合你的预处理结果）
-def build_topology_analysis_prompt():
+    # 3. 构造拓扑分析的Prompt（结合你的预处理结果）
+    def build_topology_analysis_prompt():
     """
     结合节点表清洗、社区发现/随机森林/决策树预演结果，构造精准Prompt
     （请根据实际数据替换示例中的占位符内容）
@@ -114,7 +117,6 @@ def build_topology_analysis_prompt():
         "随机森林预演结论": "节点属性X对拓扑连接权重的特征重要性达0.85",
         "决策树预演结论": "节点关系判定的核心分裂条件为属性Y>0.7"
     }
-    
     # 构造用户指令（明确分析目标）
     prompt = f"""
     基于以下预处理后的网络拓扑数据和本地算法预演结果，完成以下分析：
@@ -126,15 +128,13 @@ def build_topology_analysis_prompt():
        - 总结该网络拓扑的核心特点和潜在优化方向。
     """
     return prompt
-
-# 4. 核心调用逻辑
-def analyze_network_topology(api_key: str, endpoint_id: str):
+    # 4. 核心调用逻辑
+    def analyze_network_topology(api_key: str, endpoint_id: str):
     """调用Ark API分析网络拓扑结构"""
     # 初始化客户端
     client = init_ark_client(api_key)
     if not client:
         return
-    
     # 构造请求消息
     messages = [
         {"role": "user", "content": build_topology_analysis_prompt()}
@@ -161,13 +161,11 @@ def analyze_network_topology(api_key: str, endpoint_id: str):
     except Exception as e:
         # 捕获其他通用异常
         print(f"API调用异常：{str(e)}")
-
-# 5. 执行调用（替换为你的实际配置）
-if __name__ == "__main__":
+    # 5. 执行调用（替换为你的实际配置）
+    if __name__ == "__main__":
     # 替换为你的真实API Key和Endpoint ID（火山方舟控制台获取）
     YOUR_API_KEY = "your_api_key"
     YOUR_ENDPOINT_ID = "your_endpoint_id"
-    
     # 执行分析
     analyze_network_topology(YOUR_API_KEY, YOUR_ENDPOINT_ID)
 
@@ -177,11 +175,11 @@ if __name__ == "__main__":
 3. 工程化建议： ◦ API Key 建议通过环境变量注入（而非硬编码），例如**os.getenv("ARK_API_KEY")**； ◦ 若节点表数据量较大，可先提炼核心结论（而非全量传入），避免 Prompt 过长； 可增加响应结果的持久化（如写入文件 / 数据库），方便后续复用。
 4. 异常处理： 代码中捕获了ArkError（方舟 API 专属异常）和通用异常，可根据实际需求扩展错误重试、告警等逻辑。
 ## 三、扩展场景（可选）
-    如果需要将本地预处理的节点表数据（CSV/Excel）直接传入 API，可在preprocess_info中补充数据样例（或文件链接），例如：
-
-import pandas as pd
-node_df = pd.read_csv("清洗后的节点表.csv")
-preprocess_info["节点表样例"] = node_df.head(10).to_dict(orient="records")  # 传入前10行样例
+如果需要将本地预处理的节点表数据（CSV/Excel）直接传入 API，可在**preprocess_info**中补充数据样例（或文件链接），例如：
+    
+    import pandas as pd
+    node_df = pd.read_csv("清洗后的节点表.csv")
+    preprocess_info["节点表样例"] = node_df.head(10).to_dict(orient="records")  # 传入前10行样例
 
 ## 项目依赖：
 数据处理	pandas、numpy
@@ -192,13 +190,14 @@ preprocess_info["节点表样例"] = node_df.head(10).to_dict(orient="records") 
 古汉语大模型-AI太炎
 
 知乎开放数据平台：https://developer.zhihu.com
+
 DeepSeek开放数据平台：https://platform.deepseek.com/usage
 
 火山引擎开放数据平台：http://volcengine.com/product/doubao
 
 火山引擎开放数据平台相关APU文档：http://api.volcengine.com/api-docs/view?action=AddGraphTables&version=2025-08-15&serviceCode=graph
 
-国内学术，想深入了解者请走镜像：https://gitee.com/intellectualdisability-of-jun-sen/chuantongwuxingwangluojianmofenxi
+国内学术，核心资料，想深入了解者请走主仓库镜像：https://gitee.com/intellectualdisability-of-jun-sen/chuantongwuxingwangluojianmofenxi
 
 
 **欢迎各位同行提出建议、交流协作。国际同行可通过 GitHub Issues 提交英文反馈，我会以中文+简短英文回复。**
