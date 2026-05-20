@@ -72,8 +72,10 @@ client = Ark(api_key="你的_api_key")
 
 知乎开放数据平台：https://developer.zhihu.com
 DeepSeek开放数据平台：https://platform.deepseek.com/usage
-火山引擎开放数据平台：volcengine.com/product/doubao
-火山引擎开放数据平台相关APU文档：api.volcengine.com/api-docs/view?action=AddGraphTables&version=2025-08-15&serviceCode=graph
+
+火山引擎开放数据平台：http://volcengine.com/product/doubao
+
+火山引擎开放数据平台相关APU文档：http://api.volcengine.com/api-docs/view?action=AddGraphTables&version=2025-08-15&serviceCode=graph
 
 国内学术，想深入了解者请走镜像：https://gitee.com/intellectualdisability-of-jun-sen/chuantongwuxingwangluojianmofenxi
 
