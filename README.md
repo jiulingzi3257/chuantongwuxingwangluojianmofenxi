@@ -55,11 +55,16 @@ python -m pip install networkx pyvis pandas openpyxl openai numpy
 Subsequent Plans
 步骤 2：构建多层嵌套字典
 Step 2: Construct multi-level nested dictionaries
+
 Parse the node table based on pandas to generate multi-level nested dictionaries adapted for network analysis (layered by dimension-node-attribute).
 基于pandas解析节点表，生成适配网络分析的多层嵌套字典（按维度 - 节点 - 属性分层）
+
 步骤 3：利用邵雍八卦万物类象进行本地预演：
 Step 3: Conduct local pre-simulation by applying Shao Yong's Eight Trigrams analogous in appearance of All Things:
+
+Preparation for installing Python libraries:
 安装准备：pip install scikit-learn python-lovain
+
 步骤 4：接入AI模型：
 Step 4: Integrate AI model
 开发建议：
