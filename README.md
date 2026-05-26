@@ -105,7 +105,7 @@ DeepSeek开放数据平台：https://platform.deepseek.com/usage
 
 火山引擎开放数据平台相关APU文档：http://api.volcengine.com/api-docs/view?action=AddGraphTables&version=2025-08-15&serviceCode=graph
 
-古汉语大模型公开版：http：//t.shenshen.wiki
+古汉语大模型公开版：http://t.shenshen.wiki
 
 
 ### 参考文献：
