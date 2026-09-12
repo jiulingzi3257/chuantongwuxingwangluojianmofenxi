@@ -3,13 +3,13 @@
 
 ### 语言说明 / Language Note
 **本仓库文档主体为简体中文（方便国内用户阅读），关键声明、核心术语均提供中英双语对照，符合数字人文领域国际协作规范。**
-**The main body of the read file in this repository is in Simplified Chinese (for ease of reading by domestic users), with key statements and core terms provided in both Chinese and English, in accordance with international collaboration norms in the field of digital humanities.**
+**The documentation in this repository is primarily in Simplified Chinese for accessibility to domestic researchers, with bilingual key statements and core terminology aligned with international collaboration standards in digital humanities.**
 
 ## 介绍:
 这是一个用网络科学和python对中国传统五行以及传统罗盘进行网络建模分析的跨学科开源项目，其中，五行万物类象节点表，第一列为节点名称/类型/维度编号，第一行为标题，第二行为核心节点，部分复杂关系节点的多层属性已经用标点符号和空格分隔，是我基于邵雍的系统思维启发，已经按维度（天S、地D、人R）对关系节点进行编号和横向分布，除五个核心外，其余大部分关系节点均可能存在属性爆炸，鉴于此，咱们就先做一番基础网络验证，而后用pandas库创多层嵌套字典，接着咱们尝试用邵雍的八卦万物类象做完本地预演，最后，各位还可接入AI模型API进行训练。
 核心目标是通过Python量化建模，解构传统五行万物类象、罗盘方位体系的复杂关系网络，验证其系统关联性，并提供从基础网络分析到AI模型接入的全流程实操方案。
 
-**This project has constructed a dynamic network model of the "Zhouyi" (or "Yijing 易经") system based on network science, aiming to deconstruct the intrinsic logic of the core cultural system during the Chinese Axial Age. This modeling framework is not limited to "Zhouyi", but also covers more extensive core marginal multi-layer nested systems such as traditional five elements（“五行”wuxing） and the compass.**
+**This project applies network science methods to conduct quantitative modeling of classical Chinese correlative thought, with a focus on the Five Phases (Wuxing五行) system originating from the Chinese Axial Age. The modeling framework covers the full system of categorical correspondence (万物类象 wanwu leixiang), as well as ancient Chinese spatial orientation and temporal classification systems, all reconstructed from pre-modern textual sources.**
 **本项目基于网络科学构建了《周易》（《易经》）系统的动态网络模型，旨在解构中国轴心时代哲学的内在逻辑。该建模框架不仅限于《周易》，还涵盖了五行（五行，Five Phases）和指南针传统中更广泛的分类对应系统（万物类象，wanwu leixiang）.**
 
 **Peers from digital humanities, network science, Sinology, and philosophy are warmly welcomed to contribute suggestions, critiques, or collaborations.**
@@ -31,7 +31,7 @@
 隋·萧吉《五行大义》、《尚书·周书·洪范》、先秦·汉佚名《黄帝内经》//《素问》//《金匮真言论》《阴阳应象大论》、《灵兰秘典论》、《六节藏象论》《五藏生》《五藏别论》《经脉别论》《脏气法时论》《宣明五气论》《玉机真藏论》《天元纪大论》《五运行大论》《气交变大论》《至真要大论》//《灵枢·本神》《经脉》等
 
 汉·董仲舒《春秋繁露》//《卷十·五行对》//《卷十一·第四十二五行之义》//《卷十三·五行相生·五行相胜·五行顺逆·治水五行》//《卷十四·治乱五行·五行变数·五行五事》
-## 2.命理术数-原生态本土五行人格理论雏形-关系节点、加权关系边数据：
+## 2.命理术数-原生态本土五行人格理论雏形-关系节点、加权关系边数据 traditional Chinese correlative thinking texts-indigenous Chinese personality classification frameworks derived from traditional Five Phases thought：
 郑同《御定子平》
 
 宋·徐子平、徐升《渊海子平》
@@ -97,7 +97,7 @@
 
 · AI可解释性：我的节点表为大语言模型理解中华传统概念（如“仁—木—肝—怒”）提供了结构化的语义锚点，有助于减少AI的“幻觉”和偏见。 
 更具体落地方向等请参考主仓库的项目数据文件夹内模拟网络建模分析数据。
-
+·**This study identifies the traditional Five Phases system as a multi-layered weighted directed network with a distinct core-periphery structure. It provides a rare, independently evolved non-Western case for network science research, with empirical features of small-world networks (high clustering coefficient, short average path length) and heterogeneous multi-dimensional nodes. The dataset and modeling framework can support research in digital humanities, computational linguistics, and the history of systems thought.**
 
 ## 2. 核心流程实操
 快速开始：
