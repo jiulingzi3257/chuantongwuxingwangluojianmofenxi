@@ -9,7 +9,7 @@
 这是一个用网络科学和python对中国传统五行以及传统罗盘进行网络建模分析的跨学科开源项目，其中，五行万物类象节点表，第一列为节点名称/类型/维度编号，第一行为标题，第二行为核心节点，部分复杂关系节点的多层属性已经用标点符号和空格分隔，是我基于邵雍的系统思维启发，已经按维度（天S、地D、人R）对关系节点进行编号和横向分布，除五个核心外，其余大部分关系节点均可能存在属性爆炸，鉴于此，咱们就先做一番基础网络验证，而后用pandas库创多层嵌套字典，接着咱们尝试用邵雍的八卦万物类象做完本地预演，最后，各位还可接入AI模型API进行训练。
 核心目标是通过Python量化建模，解构传统五行万物类象、罗盘方位体系的复杂关系网络，验证其系统关联性，并提供从基础网络分析到AI模型接入的全流程实操方案。
 
-**This project builds a dynamic network model of the Zhouyi (Yijing, 易经) system based on network science, aiming to deconstruct the native logic of Chinese Axial Age philosophy. The modeling framework extends beyond the Zhouyi to encompass the broader categorical correspondence systems (wanwu leixiang, 万物类象) of the Wuxing (五行, Five Phases) and compass traditions.**
+**This project has constructed a dynamic network model of the "Zhouyi" (or "Yijing 易经") system based on network science, aiming to deconstruct the intrinsic logic of the core cultural system during the Chinese Axial Age. This modeling framework is not limited to "Zhouyi", but also covers more extensive core marginal multi-layer nested systems such as traditional five elements（“五行”wuxing） and the compass.**
 **本项目基于网络科学构建了《周易》（《易经》）系统的动态网络模型，旨在解构中国轴心时代哲学的内在逻辑。该建模框架不仅限于《周易》，还涵盖了五行（五行，Five Phases）和指南针传统中更广泛的分类对应系统（万物类象，wanwu leixiang）.**
 
 **Peers from digital humanities, network science, Sinology, and philosophy are warmly welcomed to contribute suggestions, critiques, or collaborations.**
@@ -23,6 +23,7 @@
 
 ## 数据目录
 [五行万物类象表-3b874189 (2).xlsx](https://github.com/user-attachments/files/24835189/-3b874189.2.xlsx)
+五行体系标注基准样例表
 
 [八卦万物类象.docx](https://github.com/user-attachments/files/24271622/default.docx)
 
@@ -65,19 +66,13 @@
 
 清·野鹤老人《增删卜易》（六爻方面对关系边权重的看法）等多部碎片化古籍。
 ## 核心数据说明
-### 五行万物类象节点表（wuxing_nodes.csv）
-- 第一列：节点名称/类型/维度编号（格式：`节点名_类型_维度编号`，如`木_自然属性_S10`，S=天、D=地、R=人）；
-  
-- 首行：列标题（核心节点/属性维度/关联权重）；
-  
-- 第二行：五行核心节点（金/木/水/火/土）；
-  
-- 复杂属性：通过标点（）和、和空格分隔多层属性，适配嵌套字典构建；
-
--「属性爆炸」处理：优先验证核心节点关联，再通过pandas构建多层嵌套字典逐层拓展关系节点属性。
-### 基础关系边权重表
-目前只提供了生克泄耗那20条最基础的关系边权重：如木生火、火生土、土生金、金生水、水生木;水克火，火克金，金克木，木克土，土克水。
-其余隐藏关系边需通过社区发现最短路径、跨文本计量算法挖掘。
+### 1. 五行体系标注基准样例表（wuxing_nodes.csv）
+为适配非技术背景标注人员作业习惯，采用二维宽表作为人工标注模板，完整记录节点名称、类型、所属维度（S=天/D=地/R=人）、异文、文献出处等全量属性，是全项目标注口径统一与质量校验的基准。
+数据结构：首行为列标题，第二行为五行核心节点，多层属性通过全角标点分隔；标注完成后经自动化脚本转换为标准三元组格式，用于后续网络建模。
+​
+2. 基础关系边权重表
+当前已录入五行生克泄耗共20条核心基础关系及初始权重，对应《尚书·周书·洪范》等传世文献的经典表述；其余衍生关系、跨文本关联关系，将通过最短路径算法、跨文献语义计量与古汉语大模型辅助训诂相结合的方式逐步挖掘补充。
+核心拓扑结构可通过决策树、K近邻、随机森林等算法开展鲁棒性验证，校验网络结构的稳定性。
 
 ### 七、 核心发现与待实证的假设：
 在对传统五行理论进行系统梳理时，发现 **传统五行是一张核心边缘多层属性动态网络** ，那核心边缘结构是否属实？ 
@@ -106,10 +101,11 @@
 
 ## 2. 核心流程实操
 快速开始：
-步骤 1：基础网络验证，初步验证五行节点的基础拓扑关系：
-
+快速开始：步骤1 核心体系教学可视化生成
+基于《尚书·周书·洪范》标注样例，生成五行核心网络的动态交互可视化网页，用于原理教学演示与基础拓扑验证。
+依赖安装：
       python -m pip install networkx pyvis pandas openpyxl openai numpy
-      
+输出结果：可交互HTML动态网页，直观展示五行生克泄耗核心拓扑关系，适配教学讲解、项目演示场景。
 [五行核心基础网络框架.py](https://github.com/user-attachments/files/24835386/default.py)
 
 
