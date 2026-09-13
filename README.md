@@ -294,6 +294,41 @@ DeepSeek开放数据平台：https://platform.deepseek.com/usage
 
 [78]郄亚男,吴小勇. 中医学五态人格的发展及应用研究 [J]. 中医研究, 2022, 35 (11): 84-88.
 
+[79]Borsboom D ,Cramer O A . Network Analysis: An Integrative Approach to the Structure of Psychopathology [J]. Annual Reviews, 2013, 9 (1): 91-121. DOI:10.1146/annurev-clinpsy-050212-185608.
+
+[80]Brooke J ,Aileen L ,David B . Trauma-focused psychotherapies for posttraumatic stress disorder (PTSD): A systematic review and network meta-analysis. [J]. Acta psychiatrica Scandinavica, 2021, 145 (2): 132-155. DOI:10.1111/ACPS.13366.
+
+[82]H. J H ,J. D K . Network Analysis of Psychometric Life History Indicators. [J]. PERSONALITY AND INDIVIDUAL DIFFERENCES, 2021, 183
+
+[83]Katja S ,Jessica F ,Lena D , et al. Psychological Network Analysis of General Self-Efficacy in High vs. Low Resilient Functioning Healthy Adults [J]. Frontiers Media S.A., 2021, 12 736147-736147. DOI:10.3389/FPSYT.2021.736147.
+
+[84]朱佳雯. 基于BP神经网络和数据挖掘的情感分析与心理预警模型研究 [J]. 电子设计工程, 2023, 31 (20): 100-104. DOI:10.14022/j.issn1674-6236.2023.20.022.
+
+[85]赵华,李浩,刘梦嫣. 基于深度学习的心理疾病的情感分析模型研究 [J]. 长江信息通信, 2025, 38 (6): 69-73. DOI:10.20153/j.issn.2096-9759.2025.06.018.
+
+[86]程海威,孟震宇,孙鑫,等. 青少年心理健康症状的网络分析 [J]. 中国临床心理学杂志, 2025, 33 (3): 608-614. DOI:10.16128/j.cnki.1005-3611.2025.03.030.
+
+[87]王琳. 基于社交网络分析的高校大学生心理行为模式及干预效果评估研究 [J]. 黑龙江科学, 2025, 16 (15): 78-80.
+
+[88]丁巨. 基于深度学习和SNA技术的智慧城市警务管理方法 [J]. 中国信息化, 2025, (8): 134-135.
+
+[89]何靖宜,邓嘉欣,王孟成. 网络测量学概述 [J]. 心理研究, 2025, 18 (5): 419-430. DOI:10.19988/j.cnki.issn.2095-1159.2025.05.005.
+
+[90]汪浩. 面向社交网络的图文多模态情感分析研究[D]. 南京邮电大学, 2024. DOI:10.27251/d.cnki.gnjdc.2024.001211.
+
+[91]夏昂,丁如一,潘俊豪. 我国城市和农村青少年的心理问题：基于心理测量网络分析 [J]. 心理研究, 2025, 18 (6): 527-535. DOI:10.19988/j.cnki.issn.2095-1159.2025.06.006.
+
+[92]李剑,王甦平. 大学生抑郁和焦虑共病的潜在剖面分析及其与社交网络成瘾的关联 [J]. 上海交通大学学报(医学版), 2026, 46 (2): 213-219.
+
+[93]史晓蒙,蒋俊杰,吴若雨,等. 基于贝叶斯网络分析的亲子科技干扰、父母心理距离、孤独感与青少年短视频成瘾风险的关系 [J]. 中华疾病控制杂志, 2026, 30 (2): 237-242. DOI:10.16462/j.cnki.zhjbkz.2026.02.016.
+
+[94]孙悦,杨绍清. 高职学生心理症状的网络结构演变及纵向关系 [J]. 中国心理卫生杂志, 2026, 40 (5): 447-453.
+
+[95]刘淑芳. 社交网络信息传播路径分析与预测系统设计 [J]. 软件, 2026, 47 (3): 66-68.
+
+[96]李昀璟. 基于机器学习与网络分析的青少年心理问题预警模型构建及关键机制研究[D]. 上海师范大学, 2026. DOI:10.27312/d.cnki.gshsu.2026.002253.
+
+[97]陈斌,姚琼丽,王敏. 基于网络社群的积极心理干预对大学生积极情绪的提升作用分析 [J]. 产业与科技论坛, 2026, 25 (9): 83-86.
 --
 ## 1.核心文献参考节选：
 
