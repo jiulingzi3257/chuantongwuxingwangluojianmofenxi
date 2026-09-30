@@ -1,3 +1,43 @@
+license: CC0-1.0
+text:
+  relation-extraction:
+    language:
+      - zh
+  conversational:
+    size_scale:
+      - 100-10k
+    type:
+      - task-qa
+  text-classification:
+    type:
+      - multi-class
+    language:
+      - zh
+  table-question-answering:
+    language:
+      - zh
+  sentence-similarity:
+    language:
+      - zh
+  token-classification:
+    type:
+      - ner
+    language:
+      - zh
+tags:
+  - Network-Science
+  - Digital-Humanities
+  - Python
+  - Java
+  - Knowledge-graph-construction
+  - Chinese-Language-and-Literature
+  - nlp
+  - relation-extraction
+  - conversational
+  - token-classification-type - ner
+language:
+  - zh
+
 传统五行网络建模分析 / 华夏轴心文化体系核心知识网络解构
 
 ### 一、仓库介绍
