@@ -1,40 +1,40 @@
-license: CC0-1.0
-text:
-  relation-extraction:
+许可证license: CC0-1.0
+项目标签：
+  relation-extraction关系抽取:
     language:
       - zh
-  conversational:
-    size_scale:
+  conversational:智能对话
+    size_scale:样本规模
       - 100-10k
     type:
-      - task-qa
-  text-classification:
+      - task-qa任务型对话
+  text-classification:文本分类
     type:
-      - multi-class
+      - multi-class多分类
     language:
       - zh
-  table-question-answering:
+  table-question-answering:表格问答
     language:
       - zh
-  sentence-similarity:
+  sentence-similarity句子相似度:
     language:
       - zh
-  token-classification:
+  token-classification词分类:
     type:
-      - ner
+      - ner命名实体识别
     language:
       - zh
-tags:
-  - Network-Science
-  - Digital-Humanities
+自定义标签tags:
+  - Network-Science网络科学
+  - Digital-Humanities数字人文
   - Python
   - Java
-  - Knowledge-graph-construction
-  - Chinese-Language-and-Literature
-  - nlp
-  - relation-extraction
-  - conversational
-  - token-classification-type - ner
+  - Knowledge-graph-construction知识图谱
+  - Chinese-Language-and-Literature汉语言文学
+  - nlp自然语言处理
+  - relation-extraction关系抽取
+  - conversational智能对话
+  - token-classification-type - ner词分类-命名实体识别
 language:
   - zh
 
