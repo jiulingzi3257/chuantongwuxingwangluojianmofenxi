@@ -104,10 +104,13 @@
 ## 2. 核心流程实操
 快速开始：
 快速开始：步骤1 核心体系教学可视化生成
+
 基于《尚书·周书·洪范》标注样例，生成五行核心网络的动态交互可视化网页，用于原理教学演示与基础拓扑验证。
 
 依赖安装：
-      python -m pip install networkx pyvis pandas openpyxl openai numpy
+
+       python -m pip install networkx pyvis pandas openpyxl openai numpy
+       
 输出结果：可交互HTML动态网页，直观展示五行生克泄耗核心拓扑关系，适配教学讲解、项目演示场景。
 
 [五行核心基础网络框架.py](https://github.com/user-attachments/files/24835386/default.py)
