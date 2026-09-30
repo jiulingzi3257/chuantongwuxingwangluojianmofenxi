@@ -66,8 +66,9 @@
 
 清·野鹤老人《增删卜易》（六爻方面对关系边权重的看法）等多部碎片化古籍。
 ## 核心数据说明
-### 1. 五行体系标注基准样例表（wuxing_nodes.csv）
+### 1.五行万物类象表-3b874189 (2).xlsx （wuxing_nodes.xlsx）
 为适配非技术背景标注人员作业习惯，采用二维宽表作为人工标注模板，完整记录节点名称、类型、所属维度（S=天/D=地/R=人）、异文、文献出处等全量属性，是全项目标注口径统一与质量校验的基准。
+
 数据结构：首行为列标题，第二行为五行核心节点，多层属性通过全角标点分隔；标注完成后经自动化脚本转换为标准三元组格式，用于后续网络建模。
 ​
 2. 基础关系边权重表
@@ -97,15 +98,18 @@
 
 · AI可解释性：我的节点表为大语言模型理解中华传统概念（如“仁—木—肝—怒”）提供了结构化的语义锚点，有助于减少AI的“幻觉”和偏见。 
 更具体落地方向等请参考主仓库的项目数据文件夹内模拟网络建模分析数据。
+
 ·**This study identifies the traditional Five Phases system as a multi-layered weighted directed network with a distinct core-periphery structure. It provides a rare, independently evolved non-Western case for network science research, with empirical features of small-world networks (high clustering coefficient, short average path length) and heterogeneous multi-dimensional nodes. The dataset and modeling framework can support research in digital humanities, computational linguistics, and the history of systems thought.**
 
 ## 2. 核心流程实操
 快速开始：
 快速开始：步骤1 核心体系教学可视化生成
 基于《尚书·周书·洪范》标注样例，生成五行核心网络的动态交互可视化网页，用于原理教学演示与基础拓扑验证。
+
 依赖安装：
       python -m pip install networkx pyvis pandas openpyxl openai numpy
 输出结果：可交互HTML动态网页，直观展示五行生克泄耗核心拓扑关系，适配教学讲解、项目演示场景。
+
 [五行核心基础网络框架.py](https://github.com/user-attachments/files/24835386/default.py)
 
 
