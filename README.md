@@ -580,7 +580,7 @@ DeepSeek 开放数据平台：https://platform.deepseek.com/usage
 
 📊 **产业验证**：本项目核心数据与模型已在 ModelScope 社区获得超 230 次真实 AI 开发者下载与产业验证。
 
-### 📄 BibTeX 引用
+### 📄 BibTeX 
 ```ibtex
 @misc{chuantongwuxing_network_2026,
   author       = {intellectualdisability-of-jun-sen},
