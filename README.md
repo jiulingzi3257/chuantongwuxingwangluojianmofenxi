@@ -592,7 +592,12 @@ DeepSeek 开放数据平台：https://platform.deepseek.com/usage
 }`
 
 
-**“使用提示：该 BibTeX 条目兼容 Zotero / Mendeley / LaTeX 标准编译链。如需引用具体数据表或可视化脚本，可在 note 字段追加说明，例如：`note = {引用自 项目数据/五行核心基础网络框架.py”**
+
+
+
+
+
+##**“使用提示：该 BibTeX 条目兼容 Zotero / Mendeley / LaTeX 标准编译链。如需引用具体数据表或可视化脚本，可在 note 字段追加说明，例如：`note = {引用自 项目数据/五行核心基础网络框架.py”**
 
 
 
@@ -601,7 +606,7 @@ DeepSeek 开放数据平台：https://platform.deepseek.com/usage
 
 
 
-## 数据清洗建议
+### 数据清洗建议
 本项目原始二维宽表因保留多源异文，单元格内使用了多种全角标点分隔多维度属性。
 建议可使用 [MarkItDown] 将 Excel 表格转换为 Markdown 格式，获得结构统一、易于解析的纯文本表格，再进行后续的拆分与结构化处理。
 MarkItDown 数据清洗阶段统一分隔符快速开始：
