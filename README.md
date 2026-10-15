@@ -575,13 +575,13 @@ DeepSeek 开放数据平台：https://platform.deepseek.com/usage
 
 本书专属补充声明 ：此处本书引用 仅为 对该项目的关于传统五行关系边权重设定规则参考，项目代码算法、数据库表格均未直接搬运、复制本书中任何受著作权法的整理成果。（包括但不限于现代标点，校勘记、注释、译文及版式设计等），至于利用公共知识类典籍进行二次建模分析开发，算法设计，不视为对整理者权益的侵犯。该补充声明仅本书及其同类系列专属，适用于本项目的所有公开版本。
 
-📖 引用与致谢（Citation & Acknowledgement）
+>📖 引用与致谢（Citation & Acknowledgement）
 本项目致力于传统五行理论的结构化建模与开源共享。若您在本项目基础上开展研究、二次开发或产业应用，请按以下格式引用。
 
-📊 产业验证说明：本项目的核心数据与网络框架已在 ModelScope 社区获得超 230 次真实 AI 开发者下载与产业验证，相关实践反馈持续反哺本仓库的迭代优化。
+>📊 产业验证说明：本项目的核心数据与网络框架已在 ModelScope 社区获得超 230 次真实 AI 开发者下载与产业验证，相关实践反馈持续反哺本仓库的迭代优化。
 
-📄 BibTeX 引用bibt
-ex
+>📄 BibTeX 引用bibt
+```
 
 @misc{chuantongwuxing_network_2026,
   author       = {intellectualdisability-of-jun-sen},
@@ -590,8 +590,8 @@ ex
   publisher    = {Gitee & GitHub},
   url          = {https://gitee.com/intellectualdisability-of-jun-sen/chuantongwuxingwangluojianmofenxi},
   note         = {基于《尚书·洪范》的五行知识网络框架、二维宽表及 Gephi 拓扑模型}
-}
-💡 提示：该 BibTeX 条目兼容 Zotero、Mendeley 与 LaTeX 标准编译链，可直接一键导入引用。
+}```
+>💡 提示：该 BibTeX 条目兼容 Zotero、Mendeley 与 LaTeX 标准编译链，可直接一键导入引用。
 ### 数据清洗建议
 本项目原始二维宽表因保留多源异文，单元格内使用了多种全角标点分隔多维度属性。
 建议可使用 [MarkItDown] 将 Excel 表格转换为 Markdown 格式，获得结构统一、易于解析的纯文本表格，再进行后续的拆分与结构化处理。
