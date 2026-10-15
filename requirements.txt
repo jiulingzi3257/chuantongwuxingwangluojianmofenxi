@@ -1,5 +1,6 @@
 # 传统五行网络建模分析 - Python 依赖
-# 安装：pip install -r requirements.txt
+# 安装：
+pip install -r requirements.txt
 # 说明：本项目核心交付物为古籍知识数据与分析报告，Python 代码为辅助建模工具。
 #       核心依赖跑通 项目数据/五行核心基础网络框架.py 即可；其余按需安装。
 # === 核心依赖：跑通基础网络框架 Demo 必须 ===
