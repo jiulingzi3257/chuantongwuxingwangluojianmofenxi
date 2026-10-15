@@ -590,7 +590,16 @@ DeepSeek 开放数据平台：https://platform.deepseek.com/usage
   url          = {https://gitee.com/intellectualdisability-of-jun-sen/chuantongwuxingwangluojianmofenxi},
   note         = {基于《尚书·洪范》的五行知识网络框架、二维宽表及 Gephi 拓扑模型}
 }`
+
+
 **“使用提示：该 BibTeX 条目兼容 Zotero / Mendeley / LaTeX 标准编译链。如需引用具体数据表或可视化脚本，可在 note 字段追加说明，例如：`note = {引用自 项目数据/五行核心基础网络框架.py”**
+
+
+
+
+
+
+
 
 ## 数据清洗建议
 本项目原始二维宽表因保留多源异文，单元格内使用了多种全角标点分隔多维度属性。
