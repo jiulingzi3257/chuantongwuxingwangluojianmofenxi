@@ -94,9 +94,10 @@ In the field of Chinese NLP, as well as in knowledge engineering and the digitiz
 当前已录入五行生克泄耗共20条核心基础关系及初始权重，对应《尚书·周书·洪范》等传世文献的经典表述；其余衍生关系、跨文本关联关系，将通过最短路径算法、跨文献语义计量与古汉语大模型辅助训诂相结合的方式逐步挖掘补充。
 核心拓扑结构可通过决策树、K近邻、随机森林等算法开展鲁棒性验证，校验网络结构的稳定性。
 
-### 七、 核心发现与待实证的假设：
-在对传统五行理论进行系统梳理时，发现 **传统五行是一张核心边缘多层属性动态网络** ，那核心边缘结构是否属实？ 
-
+### 七、 核心发现与待实证的假设
+![输入图片说明](screenshot_225648.png)
+**本项目以华夏轴心文化底层系统认知范式（五行体系） 为研究对象，经多源古籍文本量化解析，验证传统五行具备完整核心 - 边缘多层属性动态网络拓扑结构……**
+**This project focuses on the underlying system cognition paradigm of the Huaxia axial culture (the five-element system). Through the analysis of a large amount of ancient texts from multiple sources, it verifies that the traditional five elements possess a complete core-periphery multi-layer attribute dynamic network topology structure...**
 
 该理论发现核心价值可从四个层面入手： 一、范式价值：从“还原论”到“系统论”的跨越
 
