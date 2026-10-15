@@ -590,7 +590,8 @@ DeepSeek 开放数据平台：https://platform.deepseek.com/usage
   publisher    = {Gitee & GitHub},
   url          = {https://gitee.com/intellectualdisability-of-jun-sen/chuantongwuxingwangluojianmofenxi},
   note         = {基于《尚书·洪范》的五行知识网络框架、二维宽表及 Gephi 拓扑模型}
-}```
+}
+```
 
 >💡 提示：该 BibTeX 条目兼容 Zotero、Mendeley 与 LaTeX 标准编译链，可直接一键导入引用。
 
