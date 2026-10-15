@@ -581,7 +581,9 @@ DeepSeek 开放数据平台：https://platform.deepseek.com/usage
 
 📊 **产业验证**：本项目核心数据与模型已在 ModelScope 社区获得超 230 次真实 AI 开发者下载与产业验证。
 
-### 📄 BibTeX 
+### 📄 BibTeX 引用
+
+bibtex
 ```ibtex
 @misc{chuantongwuxing_network_2026,
   author       = {intellectualdisability-of-jun-sen},
@@ -594,10 +596,7 @@ DeepSeek 开放数据平台：https://platform.deepseek.com/usage
 ```
 
 > 💡 **使用提示**：该 BibTeX 条目兼容 Zotero / Mendeley / LaTeX 标准编译链。如需引用具体脚本或数据表，可在 `note` 字段追加说明。
-
-
-
-
+```
 ### 数据清洗建议
 本项目原始二维宽表因保留多源异文，单元格内使用了多种全角标点分隔多维度属性。
 建议可使用 [MarkItDown] 将 Excel 表格转换为 Markdown 格式，获得结构统一、易于解析的纯文本表格，再进行后续的拆分与结构化处理。
