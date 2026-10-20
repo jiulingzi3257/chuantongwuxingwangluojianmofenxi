@@ -523,6 +523,10 @@ DeepSeek 开放数据平台：https://platform.deepseek.com/usage
 > 
 > [96] 陈斌，姚琼丽，王敏。基于网络社群的积极心理干预对大学生积极情绪的提升作用分析 [J]. 产业与科技论坛，2026, 25 (9): 83-86.
 
+> [97]舒蕾, 郭懿鸾, 王慧萍, 张学涛, 胡韧奋. 古汉语词义标注语料库的构建及应用研究[J]. 中文信息学报, 2022, 36(05).https://github.com/iris2hu/ancient_chinese_sense_annotation
+
+> [98]莫凯洁, 丘子靓, 胡韧奋, 王予沛. 古汉语典故资源库的构建及应用研究[J]. 中文信息学报, 2024, 38(11).https://github.com/KaijieMo-kj/Ancient-Chinese-Allusion-Resource-Database
+
 1. 核心文献参考节选：
 
 
@@ -578,7 +582,7 @@ DeepSeek 开放数据平台：https://platform.deepseek.com/usage
 >📖 引用与致谢（Citation & Acknowledgement）
 本项目致力于传统五行理论的结构化建模与开源共享。若您在本项目基础上开展研究、二次开发或产业应用，请按以下格式引用。
 
->📊 产业验证说明：本项目的核心数据与网络框架已在 ModelScope 社区获得超 230 次真实 AI 开发者下载与产业验证，相关实践反馈持续反哺本仓库的迭代优化。
+>📊 产业验证说明：本项目的核心数据与网络框架已在 ModelScope 社区获得超 291次真实 AI 开发者下载与产业验证，相关实践反馈持续反哺本仓库的迭代优化。
 
 >📄 BibTeX 引用bibt
 ```
