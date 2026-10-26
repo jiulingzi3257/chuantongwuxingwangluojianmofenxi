@@ -527,7 +527,9 @@ DeepSeek 开放数据平台：https://platform.deepseek.com/usage
 
 > [98]莫凯洁, 丘子靓, 胡韧奋, 王予沛. 古汉语典故资源库的构建及应用研究[J]. 中文信息学报, 2024, 38(11).https://github.com/KaijieMo-kj/Ancient-Chinese-Allusion-Resource-Database
 
-1. 核心文献参考节选：
+> [100]王兆基,张诗睿,胡韧奋,张学涛. 古汉语通假字资源库的构建及应用研究[J]. 中文信息学报, 2024, 38 (03).https://github.com/frederick-wang/tongjiazi-resources
+
+## 1. 核心文献参考节选：
 
 
 > [1-1]〔隋〕萧吉。五行大义 [M]. 钱杭，点校。北京：中华书局，2022.
@@ -537,7 +539,7 @@ DeepSeek 开放数据平台：https://platform.deepseek.com/usage
 > [1-3]〔先秦 - 汉〕佚名。尚书正义 [M]. 孔安国，传。孔颖达，疏。十三经注疏本。北京：中华书局，1998. 周书・洪范第六.
 > 
 --
-2. 节点、关系边参考：
+## 2. 节点、关系边参考：
 
 
 
@@ -582,7 +584,7 @@ DeepSeek 开放数据平台：https://platform.deepseek.com/usage
 >📖 引用与致谢（Citation & Acknowledgement）
 本项目致力于传统五行理论的结构化建模与开源共享。若您在本项目基础上开展研究、二次开发或产业应用，请按以下格式引用。
 
->📊 产业验证说明：本项目的核心数据与网络框架已在 ModelScope 社区获得超 291次真实 AI 开发者下载与产业验证，相关实践反馈持续反哺本仓库的迭代优化。
+>📊 产业验证说明：本项目的核心数据与网络框架已在 ModelScope 社区获得超 423次真实 AI 开发者下载与产业验证，相关实践反馈持续反哺本仓库的迭代优化。
 
 >📄 BibTeX 引用bibt
 ```
