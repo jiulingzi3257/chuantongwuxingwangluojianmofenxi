@@ -17,8 +17,9 @@ scipy>=1.10            # bootstrap、置换检验、p值与相关分析（五态
 # === 可选：静态可视化 ===
 matplotlib>=3.7
 seaborn>=0.12
-# === 可选：AI API 接入（需自备 key，见 README 调用示例） ===
-openai>=1.0            # 火山引擎 Ark 兼容 OpenAI SDK
+# === 可选：AI API 接入（需自备 key，见 README 调用示例；两种 SDK 二选一） ===
+openai>=1.0            # 火山引擎 Ark 兼容 OpenAI SDK（OpenAI 兼容写法使用）
+volcenginesdkarkruntime>=0.1  # 火山方舟官方 SDK（README 直连示例 Ark 类使用）
 requests>=2.31
 # === 可选：未来文献/古籍批量采集（暂未使用，需要时取消注释） ===
 # scrapy>=2.11         # 批量爬取公开古籍文本或文献元数据
