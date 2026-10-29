@@ -22,7 +22,7 @@ In the field of Chinese NLP, as well as in knowledge engineering and the digitiz
 ## 项目核心任务：解构中华传统多层关联系统（自然万物类象、藏象生理、人格认知、民俗决策体系），构建加权有向多层异质网络，提供标准化节点标注、关系权重标定、拓扑验证、AI 训诂全流程工具链，为古籍活化、本土心理建模、中医系统动力学、传统文化大模型语义锚定提供标准化行业通识数据集与代码框架。
 **Core task of the project: Deconstruct the multi-layered interconnection system of traditional Chinese culture (natural phenomena, internal organ physiology, personality cognition, folk decision-making system), construct a weighted directed multi-layer heterogeneous network, provide a complete tool chain for standardizing node labeling, relationship weight calibration, topological verification, and AI interpretation, and offer standardized industry general data sets and code frameworks for the activation of ancient texts, the establishment of local psychological models, the system dynamics of traditional Chinese medicine, and the semantic anchoring of traditional culture large models.**
 ## 二、核心目标：通过 Python 或 gephi 协同工作流可视化量化建模，解构传统五行的中华轴心文化体系（自然万物类象、藏象系统、动态人格认知、民俗决策体系），构建加权有向多层异质网络，提供标准化节点标注、关系权重标定、拓扑验证、AI 训诂全流程工具链，为古籍活化、本土心理建模、中医藏象系统的动力学机制、传统文化大模型语义锚定提供标准化数据集与代码框架。
-**Core objective Through the visualization and quantitative modeling of collaborative workflows in Python or gephi, deconstruct the traditional Chinese axis cultural system of the Five Elements (the natural image of all things, the Tibetan image system, dynamic personality cognition, and the folk custom decision-making system), and construct a weighted directed multi-layer heterogeneous network. It provides a full-process toolchain including standardized node annotation, relationship weight calibration, topological verification, and AI exegesis, offering standardized datasets and code frameworks for the activation of ancient books, local psychological modeling, the dynamic mechanism of the traditional Chinese medicine Zangxiang system, and the semantic anchoring of large models of traditional culture**
+**Core objective Through the visualization and quantitative modeling of collaborative workflows in Python or gephi, deconstruct the traditional Chinese axis cultural system of the Five Elements (the natural image of all things, the Tibetan image system, dynamic personality cognition, and the folk custom decision-making system), and construct a weighted directed multi-layer heterogeneous network. It provides a full-process toolchain including standardized node annotation, relationship weight calibration, topological verification, AI exegesis, offering standardized datasets and code frameworks for the activation of ancient books, local psychological modeling, the dynamic mechanism of the traditional Chinese medicine Zangxiang system, and the semantic anchoring of large models of traditional culture**
 
 1. Build the first machine-readable Ontology of the Five Elements, achieving the digitalization and structuring of the core of the Chinese axial culture knowledge system - the traditional Five elements and all things.
 2. Verify the topological assumption that "Five Elements is a third-order magic square core-edge structure with five nodes, 20 basic weighted directed edges, and a community power of five".
@@ -45,6 +45,9 @@ In the field of Chinese NLP, as well as in knowledge engineering and the digitiz
 五行体系标注基准样例表
 
 [八卦万物类象.docx](https://github.com/user-attachments/files/24271622/default.docx)
+
+> **基础骨架模型 / Minimal skeleton**：5 节点（木火土金水）+ 20 条加权有向边的 nodes、edges 两表（Gephi / NetworkX 可直接导入）收录于 Gitee 主仓库 `项目数据/` 目录，见文末主仓库链接。
+> The minimal skeleton (5 nodes / 20 weighted directed edges; nodes & edges tables importable to Gephi/NetworkX) lives in the Gitee main repository under `项目数据/` (link at the bottom).
 
 ## 节点、关系数据来源：
 隋·萧吉《五行大义》、《尚书·周书·洪范》、先秦·汉佚名《黄帝内经》//《素问》//《金匮真言论》《阴阳应象大论》、《灵兰秘典论》、《六节藏象论》《五藏生》《五藏别论》《经脉别论》《脏气法时论》《宣明五气论》《玉机真藏论》《天元纪大论》《五运行大论》《气交变大论》《至真要大论》//《灵枢·本神》《经脉》等
@@ -85,13 +88,18 @@ In the field of Chinese NLP, as well as in knowledge engineering and the digitiz
 
 清·野鹤老人《增删卜易》（六爻方面对关系边权重的看法）等多部碎片化古籍。
 ## 核心数据说明
-### 1.五行万物类象表-3b874189 (2).xlsx （wuxing_nodes.xlsx）
+### 1.五行万物类象表-3b874189 (2).xlsx （wuxing_nodes.xlsx）
 为适配非技术背景标注人员作业习惯，采用二维宽表作为人工标注模板，完整记录节点名称、类型、所属维度（S=天/D=地/R=人）、异文、文献出处等全量属性，是全项目标注口径统一与质量校验的基准。
 
 数据结构：首行为列标题，第二行为五行核心节点，多层属性通过全角标点分隔；标注完成后经自动化脚本转换为标准三元组格式，用于后续网络建模。
 ​
-2. 基础关系边权重表
+2. 基础关系边权重表
 当前已录入五行生克泄耗共20条核心基础关系及初始权重，对应《尚书·周书·洪范》等传世文献的经典表述；其余衍生关系、跨文本关联关系，将通过最短路径算法、跨文献语义计量与古汉语大模型辅助训诂相结合的方式逐步挖掘补充。
+
+基础骨架文件（Gitee 主仓库 `项目数据/`）：`五行基础模型-万物nodes.xlsx`（列：Id, Label, Iswuxingcore, 维度, wuxing label, wuxing Id）与 `五行基础模型edges类象关系表.xlsx`（列：Source, Target, Type=Directed, Kind, Id, Label, Weight；相生 +1.0 / 相克 -0.5 / 相泄 -0.8 / 相耗 -1.0）。
+
+文献出处口径（无征不信 / exegesis-first）：相生 5 条边已回标《春秋繁露·五行相生》；相克、相泄、相耗共 15 条边暂仅标注关系类型编号，待找到可靠传世原典出处后逐条补入 Label，不以后人附会预支。完整一维长表 nodes.csv / edges.csv 仍在人工标注迭代中，暂未发布。
+
 核心拓扑结构可通过决策树、K近邻、随机森林等算法开展鲁棒性验证，校验网络结构的稳定性。
 
 ### 七、 核心发现与待实证的假设
@@ -151,7 +159,7 @@ Step 3: Conduct local pre-simulation by applying Shao Yong's Eight Trigrams anal
 Preparation for installing Python libraries:
 安装准备：
       
-      pip install scikit-learn python-lovain
+      pip install scikit-learn python-louvain
 
 步骤 4：接入AI模型：
 Step 4: Integrate AI model
@@ -169,7 +177,7 @@ Example of calling APU:
 official example:
 官方示例：
 
-     form volcenginesdkarkruntime import Ark
+     from volcenginesdkarkruntime import Ark
      client = Ark(api_key="your_api_key")= client.chat.completions.create( model="your_endpoint_id", messages=[{"role": "user", "content": "分析网络拓扑结构..."}] )
 
  完整版:
@@ -291,11 +299,3 @@ DeepSeek开放数据平台：https://platform.deepseek.com/usage
 
 **This project is open-sourced under the [CC0-1.0 Open Source License], and you are free to use, modify, and distribute the resources of this project in accordance with the terms of the license.**
 **本项目采用 [CC0-1.0开源协议] 开源，您可遵循协议条款自由使用、修改和分发本项目资源。**
-
-
-
-
-
-
-
-
