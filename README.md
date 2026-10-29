@@ -16,9 +16,9 @@ In the field of Chinese NLP, as well as in knowledge engineering and the digitiz
 
 **本项目全程遵循《网络科学导论》的学术基准与规范标准，不涉及吉凶推断、个人命运、娱乐命理等具体事件预测，旨在为华夏轴心文化知识体系核心的易学文化现代化研究、古籍知识结构化整理、中医藏象系统动力学分析提供一套跨学科的开源知识工程底座框架。This project strictly adheres to the academic standards and norms of "Introduction to Network Science". It does not involve specific event predictions such as auspicious or inauspicious judgments, personal fate, or entertainment astrology. Its aim is to provide a cross-disciplinary open-source knowledge engineering framework for the modernization research of the core Yi culture of the Chinese axis culture knowledge system, the structuring of ancient books' knowledge, and the dynamic analysis of the TCM zang-xing system.**
 
-## 项目核心任务：解构中华传统多层关联系统（自然万物类象、藏象生理、人格认知、民俗决策体系），构建加权有向多层异质网络，提供标准化节点标注、关系权重标定、拓扑验证、AI 训诂全流程工具链，为古籍活化、本土心理建模、中医系统动力学、传统文化大模型语义锚定提供标准化行业通识数据集与代码框架。
+## 项目核心任务：解构中华传统多层关联系统（自然万物类象、藏象生理、人格认知、民俗决策体系），构建加权有向多层异质网络，提供标准化节点标注、关系权重标定、拓扑验证、AI 训诂工具链（规划方向：当前仅 README 示例代码，非已交付流水线），为古籍活化、本土心理建模、中医系统动力学、传统文化大模型语义锚定提供标准化行业通识数据集与代码框架。
 **Core task of the project: Deconstruct the multi-layered interconnection system of traditional Chinese culture (natural phenomena, internal organ physiology, personality cognition, folk decision-making system), construct a weighted directed multi-layer heterogeneous network, provide a complete tool chain for standardizing node labeling, relationship weight calibration, topological verification, and AI interpretation, and offer standardized industry general data sets and code frameworks for the activation of ancient books, the establishment of local psychological models, the system dynamics of traditional Chinese medicine, and the semantic anchoring of traditional culture large models.**
-## 二、核心目标：通过 Python 或 gephi 协同工作流可视化量化建模，解构传统五行的中华轴心文化体系（自然万物类象、藏象系统、动态人格认知、民俗决策体系），构建加权有向多层异质网络，提供标准化节点标注、关系权重标定、拓扑验证、AI 训诂全流程工具链，为古籍活化、本土心理建模、中医藏象系统的动力学机制、传统文化大模型语义锚定提供标准化数据集与代码框架。
+## 二、核心目标：通过 Python 或 gephi 协同工作流可视化量化建模，解构传统五行的中华轴心文化体系（自然万物类象、藏象系统、动态人格认知、民俗决策体系），构建加权有向多层异质网络，提供标准化节点标注、关系权重标定、拓扑验证、AI 训诂工具链（规划方向：设计中的工具链，非已交付实现），为古籍活化、本土心理建模、中医藏象系统的动力学机制、传统文化大模型语义锚定提供标准化数据集与代码框架。
 **Core objective Through the visualization and quantitative modeling of collaborative workflows in Python or gephi, deconstruct the traditional Chinese axis cultural system of the Five Elements (the natural image of all things, the Tibetan image system, dynamic personality cognition, and the folk custom decision-making system), and construct a weighted directed multi-layer heterogeneous network. It provides a full-process toolchain including standardized node annotation, relationship weight calibration, topological verification, AI exegesis, offering standardized datasets and code frameworks for the activation of ancient books, local psychological modeling, the dynamic mechanism of the traditional Chinese medicine Zangxiang system, and the semantic anchoring of large models of traditional culture**
 
 1. Build the first machine-readable Ontology of the Five Elements, achieving the digitalization and structuring of the core of the Chinese axial culture knowledge system - the traditional Five elements and all things.
@@ -122,7 +122,7 @@ In the field of Chinese NLP, as well as in knowledge engineering and the digitiz
 · 复杂系统医学（规划方向）：基于“五脏-五志-五气”的对应关系，未来可探索藏象学说的网络动力学建模；是否满足小世界判据须另行检验，现阶段仅为方法设想，不预设结论。
 
 · AI可解释性：我的节点表为大语言模型理解中华传统概念（如“仁—木—肝—怒”）提供了结构化的语义锚点，有助于减少AI的“幻觉”和偏见。 
-更具体落地方向等请参考主仓库的项目数据文件夹内模拟网络建模分析数据。
+更具体落地方向可参考主仓库 `项目数据/` 内的模拟网络建模分析素材；需说明：这些素材由二维表开展模拟网络分析得到，是对整体模型的结构性估测，仅供参考，不构成对核心架构的实测数据分析。
 
 ·**The minimal skeleton (5 nodes / 20 weighted directed edges) operationalizes the Five Phases as a weighted directed graph for further testing. Whether it exhibits a distinct core-periphery structure or small-world properties remains a hypothesis: the current K5-like projection and regular degree sequence do not by themselves demonstrate core-periphery or small-world topology, which must be reassessed after evidence-based edge expansion against a random-graph baseline. The framework may support follow-up work in digital humanities, computational linguistics, and the history of systems thought.**
 
