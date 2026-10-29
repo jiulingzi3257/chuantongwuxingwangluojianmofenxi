@@ -98,7 +98,7 @@ In the field of Chinese NLP, as well as in knowledge engineering and the digitiz
 
 基础骨架文件（Gitee 主仓库 `项目数据/`）：`五行基础模型-万物nodes.xlsx`（列：Id, Label, Iswuxingcore, 维度, wuxing label, wuxing Id）与 `五行基础模型edges类象关系表.xlsx`（列：Source, Target, Type=Directed, Kind, Id, Label, Weight；相生 +1.0 / 相克 -0.5 / 相泄 -0.8 / 相耗 -1.0）。
 
-文献出处口径（无征不信 / exegesis-first）：相生 5 条边已回标《春秋繁露·五行相生》；相克、相泄、相耗共 15 条边暂仅标注关系类型编号，待找到可靠传世原典出处后逐条补入 Label，不以后人附会预支。完整一维长表 nodes.csv / edges.csv 仍在人工标注迭代中，暂未发布。
+文献出处口径（无征不信 / exegesis-first）：相生 5 条回标《春秋繁露·五行相生》（Weight=+1.0），相克 5 条回标《春秋繁露·五行相胜》（Weight=-0.5）；相泄 5 条（-0.8）、相耗 5 条（-1.0）共 10 条暂仅标注关系类型编号，待找到可靠传世原典出处后逐条补入 Label，不以后人附会预支。Only edges backed by verifiable transmitted-source citations carry a Label citation; relation types without a confirmed source remain blank rather than retrofitted. 完整一维长表 nodes.csv / edges.csv 仍在人工标注迭代中，暂未发布。
 
 核心拓扑结构可通过决策树、K近邻、随机森林等算法开展鲁棒性验证，校验网络结构的稳定性。
 
@@ -178,7 +178,8 @@ official example:
 官方示例：
 
      from volcenginesdkarkruntime import Ark
-     client = Ark(api_key="your_api_key")= client.chat.completions.create( model="your_endpoint_id", messages=[{"role": "user", "content": "分析网络拓扑结构..."}] )
+     client = Ark(api_key="your_api_key")
+     response = client.chat.completions.create(model="your_endpoint_id", messages=[{"role": "user", "content": "分析网络拓扑结构..."}])
 
  完整版:
 **Example of calling APU in the full version:**
