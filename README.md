@@ -1,6 +1,3 @@
-[五行核心基础网络框架.py](https://github.com/user-attachments/files/24835273/default.py)[五行核心基础网络框架.py](https://github.com/user-attachments/files/24835153/default.py)
-[五行核心基础网络框架.py](https://github.com/user-attachments/files/24835164/default.py)
-
 ### 语言说明 / Language Note
 **本仓库文档主体为简体中文（方便国内用户阅读），关键声明、核心术语均提供中英双语对照，符合数字人文领域国际协作规范。**
 **The documentation in this repository is primarily in Simplified Chinese for accessibility to domestic researchers, with bilingual key statements and core terminology aligned with international collaboration standards in digital humanities.**
@@ -14,13 +11,13 @@
 
 **中文NLP领域，以及知识工程方面、古籍数字化方面在传统五行、易图学方向存在明显的结构性数据空白与方法论错配。**
 **现有资源要么是零散的文本摘录，要么是未经文献校验的二手整理，缺乏一套有古籍出处、经过人工审计、可直接用于NLP任务的结构化知识图谱，方法论也错配，形成长期误解。
-而本项目从《尚书·洪范》《春秋繁露》等原典出发，基于《网络科学导论》的基础标准规范，已完成703个节点的人工标注与网络建模，尝试为这一空白提供第一块可用的数据底座。
-In the field of Chinese NLP, as well as in knowledge engineering and the digitization of ancient books, there are obvious structural data gaps and methodological mismatches in the directions of traditional Five Elements and I Ching Graph Theory (Yi Tu Xue,Here 'graph' refers both to the traditional Yijing diagrams (e.g., Xiantian tu) and to graph-theoretic modeling). The existing resources are either scattered text excerpts or second-hand compilations without literature verification. There is a lack of a structured knowledge graph with ancient book sources, manually audited, and directly applicable to NLP tasks. The methodology is also mismatched, leading to long-term misunderstandings. This project starts from the original classics such as "Hongfan" in "Shangshu" and "Fanlu of Chunqiu", and based on the basic standard norms of "Introduction to Network Science", has completed the manual annotation and network modeling of 703 nodes, attempting to provide the first usable data foundation for this gap.**
+而本项目从《尚书·洪范》《春秋繁露》等传世原典出发，遵循《网络科学导论》的基础规范，先以 5 节点（木火土金水）、20 条加权有向边的最小可复现骨架立住本体口径；二维宽表标注模板持续扩充，完整一维长表尚未发布，模板条目数不等同于已建模节点数，尝试为这一空白提供第一块可复现的数据底座。
+In the field of Chinese NLP, as well as in knowledge engineering and the digitization of ancient books, there are obvious structural data gaps and methodological mismatches in the directions of traditional Five Elements and I Ching Graph Theory (Yi Tu Xue,Here 'graph' refers both to the traditional Yijing diagrams (e.g., Xiantian tu) and to graph-theoretic modeling). The existing resources are either scattered text excerpts or second-hand compilations without literature verification. There is a lack of a structured knowledge graph with ancient book sources, manually audited, and directly applicable to NLP tasks. The methodology is also mismatched, leading to long-term misunderstandings. Starting from transmitted classics such as the Hongfan chapter of the Shangshu and the Chunqiu Fanlu, and following the basic norms of Introduction to Network Science, this project first establishes a minimal reproducible skeleton of 5 nodes (Wood/Fire/Earth/Metal/Water) and 20 weighted directed edges; the two-dimensional annotation template keeps expanding, while the full one-dimensional long table is not yet released, so template entry counts are not treated as modeled nodes.**
 
 **本项目全程遵循《网络科学导论》的学术基准与规范标准，不涉及吉凶推断、个人命运、娱乐命理等具体事件预测，旨在为华夏轴心文化知识体系核心的易学文化现代化研究、古籍知识结构化整理、中医藏象系统动力学分析提供一套跨学科的开源知识工程底座框架。This project strictly adheres to the academic standards and norms of "Introduction to Network Science". It does not involve specific event predictions such as auspicious or inauspicious judgments, personal fate, or entertainment astrology. Its aim is to provide a cross-disciplinary open-source knowledge engineering framework for the modernization research of the core Yi culture of the Chinese axis culture knowledge system, the structuring of ancient books' knowledge, and the dynamic analysis of the TCM zang-xing system.**
 
 ## 项目核心任务：解构中华传统多层关联系统（自然万物类象、藏象生理、人格认知、民俗决策体系），构建加权有向多层异质网络，提供标准化节点标注、关系权重标定、拓扑验证、AI 训诂全流程工具链，为古籍活化、本土心理建模、中医系统动力学、传统文化大模型语义锚定提供标准化行业通识数据集与代码框架。
-**Core task of the project: Deconstruct the multi-layered interconnection system of traditional Chinese culture (natural phenomena, internal organ physiology, personality cognition, folk decision-making system), construct a weighted directed multi-layer heterogeneous network, provide a complete tool chain for standardizing node labeling, relationship weight calibration, topological verification, and AI interpretation, and offer standardized industry general data sets and code frameworks for the activation of ancient texts, the establishment of local psychological models, the system dynamics of traditional Chinese medicine, and the semantic anchoring of traditional culture large models.**
+**Core task of the project: Deconstruct the multi-layered interconnection system of traditional Chinese culture (natural phenomena, internal organ physiology, personality cognition, folk decision-making system), construct a weighted directed multi-layer heterogeneous network, provide a complete tool chain for standardizing node labeling, relationship weight calibration, topological verification, and AI interpretation, and offer standardized industry general data sets and code frameworks for the activation of ancient books, the establishment of local psychological models, the system dynamics of traditional Chinese medicine, and the semantic anchoring of traditional culture large models.**
 ## 二、核心目标：通过 Python 或 gephi 协同工作流可视化量化建模，解构传统五行的中华轴心文化体系（自然万物类象、藏象系统、动态人格认知、民俗决策体系），构建加权有向多层异质网络，提供标准化节点标注、关系权重标定、拓扑验证、AI 训诂全流程工具链，为古籍活化、本土心理建模、中医藏象系统的动力学机制、传统文化大模型语义锚定提供标准化数据集与代码框架。
 **Core objective Through the visualization and quantitative modeling of collaborative workflows in Python or gephi, deconstruct the traditional Chinese axis cultural system of the Five Elements (the natural image of all things, the Tibetan image system, dynamic personality cognition, and the folk custom decision-making system), and construct a weighted directed multi-layer heterogeneous network. It provides a full-process toolchain including standardized node annotation, relationship weight calibration, topological verification, AI exegesis, offering standardized datasets and code frameworks for the activation of ancient books, local psychological modeling, the dynamic mechanism of the traditional Chinese medicine Zangxiang system, and the semantic anchoring of large models of traditional culture**
 
@@ -44,10 +41,10 @@ In the field of Chinese NLP, as well as in knowledge engineering and the digitiz
 [五行万物类象表-3b874189 (2).xlsx](https://github.com/user-attachments/files/24835189/-3b874189.2.xlsx)
 五行体系标注基准样例表
 
-[八卦万物类象.docx](https://github.com/user-attachments/files/24271622/default.docx)
+[八卦万物类象.pdf](八卦万物类象.pdf)
 
-> **基础骨架模型 / Minimal skeleton**：5 节点（木火土金水）+ 20 条加权有向边的 nodes、edges 两表（Gephi / NetworkX 可直接导入）收录于 Gitee 主仓库 `项目数据/` 目录，见文末主仓库链接。
-> The minimal skeleton (5 nodes / 20 weighted directed edges; nodes & edges tables importable to Gephi/NetworkX) lives in the Gitee main repository under `项目数据/` (link at the bottom).
+> **基础骨架模型 / Minimal skeleton**：5 节点（木火土金水）+ 20 条加权有向边的 nodes、edges 两表（Gephi / NetworkX 可直接导入）同时保留于本仓库根目录（`五行基础模型-万物nodes.xlsx`、`五行基础模型edges类象关系表.xlsx`）与 Gitee 主仓库 `项目数据/` 目录。
+> The minimal skeleton (5 nodes / 20 weighted directed edges; importable to Gephi/NetworkX) is kept at the repository root here (`五行基础模型-万物nodes.xlsx`, `五行基础模型edges类象关系表.xlsx`) and under `项目数据/` in the Gitee main repository (link at the bottom).
 
 ## 节点、关系数据来源：
 隋·萧吉《五行大义》、《尚书·周书·洪范》、先秦·汉佚名《黄帝内经》//《素问》//《金匮真言论》《阴阳应象大论》、《灵兰秘典论》、《六节藏象论》《五藏生》《五藏别论》《经脉别论》《脏气法时论》《宣明五气论》《玉机真藏论》《天元纪大论》《五运行大论》《气交变大论》《至真要大论》//《灵枢·本神》《经脉》等
@@ -141,7 +138,7 @@ In the field of Chinese NLP, as well as in knowledge engineering and the digitiz
        
 输出结果：可交互HTML动态网页，直观展示五行生克泄耗核心拓扑关系，适配教学讲解、项目演示场景。
 
-[五行核心基础网络框架.py](https://github.com/user-attachments/files/24835386/default.py)
+[五行核心基础网络框架.py](五行核心基础网络框架.py)
 
 
 后续计划：
@@ -184,25 +181,25 @@ official example:
  完整版:
 **Example of calling APU in the full version:**
 
-    # 1. 导入依赖库
-    from volcenginesdkarkruntime import Ark
-    from volcenginesdkarkruntime.errors import ArkError
-    import json  # 可选：若需要结构化输出时使用
-    # 2. 初始化Ark客户端（核心配置）
-    def init_ark_client(api_key: str):
-    初始化Ark客户端
+```python
+# 1. 导入依赖库
+from volcenginesdkarkruntime import Ark
+from volcenginesdkarkruntime.errors import ArkError
+import json  # 可选：若需要结构化输出时使用
+
+# 2. 初始化Ark客户端（核心配置）
+def init_ark_client(api_key: str):
+    """初始化Ark客户端"""
     try:
         client = Ark(api_key=api_key)
         return client
     except Exception as e:
         print(f"客户端初始化失败：{str(e)}")
         return None
-    # 3. 构造拓扑分析的Prompt（结合你的预处理结果）
-    def build_topology_analysis_prompt():
-    """
-    结合节点表清洗、社区发现/随机森林/决策树预演结果，构造精准Prompt
-    （请根据实际数据替换示例中的占位符内容）
-    """
+
+# 3. 构造拓扑分析的Prompt（结合你的预处理结果）
+def build_topology_analysis_prompt():
+    """结合节点表清洗、社区发现/随机森林/决策树预演结果，构造精准Prompt（请根据实际数据替换示例中的占位符内容）"""
     # 示例：预处理后的关键信息（你实际的节点/算法结果）
     preprocess_info = {
         "节点表维度": ["维度编号", "关系节点名", "属性列1", "属性列2"],
@@ -221,8 +218,9 @@ official example:
        - 总结该网络拓扑的核心特点和潜在优化方向。
     """
     return prompt
-    # 4. 核心调用逻辑
-    def analyze_network_topology(api_key: str, endpoint_id: str):
+
+# 4. 核心调用逻辑
+def analyze_network_topology(api_key: str, endpoint_id: str):
     """调用Ark API分析网络拓扑结构"""
     # 初始化客户端
     client = init_ark_client(api_key)
@@ -232,7 +230,6 @@ official example:
     messages = [
         {"role": "user", "content": build_topology_analysis_prompt()}
     ]
-    
     try:
         # 调用Chat Completions API
         response = client.chat.completions.create(
@@ -241,26 +238,26 @@ official example:
             temperature=0.3,   # 低随机性，保证分析结果稳定
             max_tokens=2000     # 按需调整输出长度
         )
-        
         # 解析响应结果
         analysis_result = response.choices[0].message.content
         print("=== 网络拓扑分析结果 ===")
         print(analysis_result)
         return analysis_result
-    
     except ArkError as e:
         # 捕获方舟API专属异常
         print(f"API调用失败（ArkError）：错误码={e.code}，错误信息={e.message}")
     except Exception as e:
         # 捕获其他通用异常
         print(f"API调用异常：{str(e)}")
-    # 5. 执行调用（替换为你的实际配置）
-    if __name__ == "__main__":
+
+# 5. 执行调用（替换为你的实际配置）
+if __name__ == "__main__":
     # 替换为你的真实API Key和Endpoint ID（火山方舟控制台获取）
     YOUR_API_KEY = "your_api_key"
     YOUR_ENDPOINT_ID = "your_endpoint_id"
     # 执行分析
     analyze_network_topology(YOUR_API_KEY, YOUR_ENDPOINT_ID)
+```
 
 ## 二、关键说明
 1.  配置替换： **your_api_key**：从火山引擎方舟控制台获取的 API 密钥（注意保密，不要硬编码到代码仓库）；**your_endpoint_id**：你部署的模型端点 ID（需先在方舟控制台完成模型部署）。
@@ -294,7 +291,7 @@ DeepSeek开放数据平台：https://platform.deepseek.com/usage
 
 
 **欢迎各位同行提出建议、交流协作。国际同行可通过 GitHub Issues 提交英文反馈，我会以中文+简短英文回复。**
-**International peers are welcome to submit feedback, bug reports, or collaboration inquiries via GitHub Issues. I will respond in English or bilingual format. For longer discussions related to classical text exegesis or network modeling methodology, feel free to reference the relevant literature nodes and edge tables in the data/ directory.Or conduct in-depth discussions through GitHub discussion**
+**International peers are welcome to submit feedback, bug reports, or collaboration inquiries via GitHub Issues. I will respond in English or bilingual format. For longer discussions related to classical text exegesis or network modeling methodology, feel free to reference the node and edge tables at the repository root (五行基础模型-万物nodes.xlsx, 五行基础模型edges类象关系表.xlsx), or open GitHub Discussions for in-depth methodology.**
 
 ### 开源协议 / Open Source License
 
