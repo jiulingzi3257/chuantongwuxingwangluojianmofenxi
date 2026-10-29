@@ -101,16 +101,16 @@ In the field of Chinese NLP, as well as in knowledge engineering and the digitiz
 
 ### 七、 核心发现与待实证的假设
 ![输入图片说明](screenshot_225648.png)
-**本项目以华夏轴心文化底层系统认知范式（五行体系） 为研究对象，经多源古籍文本量化解析，验证传统五行具备完整核心 - 边缘多层属性动态网络拓扑结构……**
-**This project focuses on the underlying system cognition paradigm of the Huaxia axial culture (the five-element system). Through the analysis of a large amount of ancient texts from multiple sources, it verifies that the traditional five elements possess a complete core-periphery multi-layer attribute dynamic network topology structure...**
+**本项目以华夏轴心文化底层系统认知范式（五行体系）为研究对象，将“传统五行是否具备核心-边缘多层属性动态网络拓扑结构”列为待检验假设（hypothesis）。当前公开的最小骨架（5 节点 / 20 条加权有向边）尚不足以证实该结构；核心-边缘、小世界等结论须在补充有传世出处的实体关系、并完成拓扑指标与随机图基准对照后再行给出。**
+**This project takes the five-element system as the underlying cognition paradigm and treats “whether it forms a core-periphery multi-layer network topology” as a hypothesis to be tested. The current minimal skeleton (5 nodes / 20 weighted directed edges) does not yet provide evidence for core-periphery structure; such conclusions require evidence-based edge expansion plus metric testing against a random-graph baseline.**
 
 该理论发现核心价值可从四个层面入手： 一、范式价值：从“还原论”到“系统论”的跨越
 
-过去两千年，五行主要被当作哲学概念或占卜工具，长期被还原论思维排斥在科学话语之外。我这个的发现首次证明：**五行不是五个孤立的标签，而是一个具有明确拓扑结构（核心-边缘）、关系边权重（生克泄耗）、多层属性（S/D/R）和动态演化规律（时序网络）的复杂系统**。是一个**中国传统五节点20条基础生克加权有向边五次幂的核心边缘结构多层属性嵌套动态关系模型**，这为“系统思维”“古系统思维”提供了一个可计算、可验证的古代范本，打破了“东方智慧只能定性、不能定量”的刻板印象。
+过去两千年，五行主要被当作哲学概念或占卜工具，长期被还原论思维排斥在科学话语之外。本项目提出一个**待检验命题（而非已证明结论）**：五行可能不是五个孤立标签，而是由生克泄耗关系边权重连接、并可附加多层属性（S/D/R 维度列当前待补）的有向关系系统；其是否呈现核心-边缘结构、是否存在度分布异质性（幂律），须由度分布与相关统计指标检验，当前不作断言。现阶段公开物为**中国传统五行五节点、20 条基础加权有向边的最小可复现骨架**，先为“古系统思维可否计算化”提供一个可复现的小样本底座；“东方智慧只能定性、不能定量”这一判断是否成立，留待扩边后的实证检验回答，本阶段不下定论。
 
-二、网络科学价值：一个古老的“小世界”与“异质网络”案例
+二、网络科学价值：待检验的“小世界 / 异质网络”研究方向
 
-现代网络科学通常研究社交网络、生物网络、互联网等。我这个的发现揭示：中国先哲早在轴心时代就构建了一个具有**高聚类系数（同类象紧密连接）**和**短平均路径**（**任意节点约3步可达**）的“小世界网络”。 这为网络科学提供了一个非西方的、独立起源的经典案例，有助于检验网络演化模型的普适性。**同时，天、地、人三维节点的异质性分布，也为“多层网络”和“异质信息网络”研究提供了天然的数据集。**
+现代网络科学通常研究社交网络、生物网络、互联网等。待检验方向：五行体系能否作为一个非西方、独立起源的网络科学案例。**复算事实（见《骨架拓扑复算说明.md》，networkx 3.6.1 实跑）**：当前 5 节点最小骨架的无向投影为完全图 K5，有向总度序列 [8,8,8,8,8] 全相同（正则图、无度异质性），聚类系数与传递性均为 1.0、平均路径长度为 1.0——这些数值是完全图与 n=5 的数学必然，**不构成小世界证据，也不存在“约 3 步可达”的实测路径**。小世界判据（高聚类 + 相对随机图基准的短路径）须在补充有传世出处的实体关系、节点数显著扩大后，对照 WS 等随机图基准重新计算。天、地、人（S/D/R）三维异质分布是规划中的多层 / 异质网络方向；当前 nodes 表“维度”列尚为空，暂不构成现成的异质数据集。
 
 三、方法论价值：为古籍活化提供“知识结构化”的元框架
 
@@ -119,12 +119,12 @@ In the field of Chinese NLP, as well as in knowledge engineering and the digitiz
 **四、跨学科价值：连接人文、社科与自然科学的桥梁**
 
 · 本土心理学：我基于本次将五行的建模，回归其作为“**关系模型**”本质，对其本土人格研究中“**五行人格理论**”的扩展与延伸，为中医五态人格、大五人格等提供了动态演化的计算框架，可以开发比九型人格更具文化根基的人格测评工具。 
-· 复杂系统医学：基于“五脏-五志-五气”的对应关系，可以辅助构建“情志致病”的藏象学说小世界网络的动力学机制，有助于在2025年中华医道大会之后辅助探索**心身疾病**的**非线性**网络动力学机制。
+· 复杂系统医学（规划方向）：基于“五脏-五志-五气”的对应关系，未来可探索藏象学说的网络动力学建模；是否满足小世界判据须另行检验，现阶段仅为方法设想，不预设结论。
 
 · AI可解释性：我的节点表为大语言模型理解中华传统概念（如“仁—木—肝—怒”）提供了结构化的语义锚点，有助于减少AI的“幻觉”和偏见。 
 更具体落地方向等请参考主仓库的项目数据文件夹内模拟网络建模分析数据。
 
-·**This study identifies the traditional Five Phases system as a multi-layered weighted directed network with a distinct core-periphery structure. It provides a rare, independently evolved non-Western case for network science research, with empirical features of small-world networks (high clustering coefficient, short average path length) and heterogeneous multi-dimensional nodes. The dataset and modeling framework can support research in digital humanities, computational linguistics, and the history of systems thought.**
+·**The minimal skeleton (5 nodes / 20 weighted directed edges) operationalizes the Five Phases as a weighted directed graph for further testing. Whether it exhibits a distinct core-periphery structure or small-world properties remains a hypothesis: the current K5-like projection and regular degree sequence do not by themselves demonstrate core-periphery or small-world topology, which must be reassessed after evidence-based edge expansion against a random-graph baseline. The framework may support follow-up work in digital humanities, computational linguistics, and the history of systems thought.**
 
 ## 2. 核心流程实操
 快速开始：
@@ -263,7 +263,7 @@ if __name__ == "__main__":
 1.  配置替换： **your_api_key**：从火山引擎方舟控制台获取的 API 密钥（注意保密，不要硬编码到代码仓库）；**your_endpoint_id**：你部署的模型端点 ID（需先在方舟控制台完成模型部署）。
 2. Prompt 优化： 示例中**preprocess_info**是占位符，需替换为你实际清洗后的节点表、社区发现 / 随机森林 / 决策树的输出结果；  分析要求可根据需求调整（比如增加「拓扑漏洞分析」「节点重要性排序」等）。
 3. 工程化建议： ◦ API Key 建议通过环境变量注入（而非硬编码），例如**os.getenv("ARK_API_KEY")**； ◦ 若节点表数据量较大，可先提炼核心结论（而非全量传入），避免 Prompt 过长； 可增加响应结果的持久化（如写入文件 / 数据库），方便后续复用。
-4. 异常处理： 代码中捕获了ArkError（方舟 API 专属异常）和通用异常，可根据实际需求扩展错误重试、告警等逻辑。
+4. 异常处理： 代码中捕获了ArkError（Ark API 专属异常）和通用异常，可根据实际需求扩展错误重试、告警等逻辑。
 ## 三、扩展场景（可选）
 如果需要将本地预处理的节点表数据（CSV/Excel）直接传入 API，可在**preprocess_info**中补充数据样例（或文件链接），例如：
     
