@@ -14,7 +14,7 @@
 而本项目从《尚书·洪范》《春秋繁露》等传世原典出发，遵循《网络科学导论》的基础规范，先以 5 节点（木火土金水）、20 条加权有向边的最小可复现骨架立住本体口径；二维宽表标注模板持续扩充，完整一维长表尚未发布，模板条目数不等同于已建模节点数，尝试为这一空白提供第一块可复现的数据底座。
 In the field of Chinese NLP, as well as in knowledge engineering and the digitization of ancient books, there are obvious structural data gaps and methodological mismatches in the directions of traditional Five Elements and I Ching Graph Theory (Yi Tu Xue,Here 'graph' refers both to the traditional Yijing diagrams (e.g., Xiantian tu) and to graph-theoretic modeling). The existing resources are either scattered text excerpts or second-hand compilations without literature verification. There is a lack of a structured knowledge graph with ancient book sources, manually audited, and directly applicable to NLP tasks. The methodology is also mismatched, leading to long-term misunderstandings. Starting from transmitted classics such as the Hongfan chapter of the Shangshu and the Chunqiu Fanlu, and following the basic norms of Introduction to Network Science, this project first establishes a minimal reproducible skeleton of 5 nodes (Wood/Fire/Earth/Metal/Water) and 20 weighted directed edges; the two-dimensional annotation template keeps expanding, while the full one-dimensional long table is not yet released, so template entry counts are not treated as modeled nodes.**
 
-**本项目全程遵循《网络科学导论》的学术基准与规范标准，不涉及吉凶推断、个人命运、娱乐命理等具体事件预测，旨在为华夏轴心文化知识体系核心的易学文化现代化研究、古籍知识结构化整理、中医藏象系统动力学分析提供一套跨学科的开源知识工程底座框架。This project strictly adheres to the academic standards and norms of "Introduction to Network Science". It does not involve specific event predictions such as auspicious or inauspicious judgments, personal fate, or entertainment astrology. Its aim is to provide a cross-disciplinary open-source knowledge engineering framework for the modernization research of the core Yi culture of the Chinese axis culture knowledge system, the structuring of ancient books' knowledge, and the dynamic analysis of the TCM zang-xing system.**
+**本项目全程遵循《网络科学导论》的学术基准与规范标准，不涉及吉凶推断、个人命运、娱乐命理等具体事件预测，旨在为华夏轴心文化知识体系核心的易学文化现代化研究、古籍知识结构化整理、中医藏象系统动力学分析提供一套跨学科的开源知识工程底座框架。This project strictly adheres to the academic standards and norms of "Introduction to Network Science". It does not involve specific event predictions such as auspicious or inauspicious judgments, personal fate, or entertainment astrology. Its aim is to provide a cross-disciplinary open-source knowledge engineering framework for the modernization research of the core Yi culture knowledge system, the structuring of ancient books' knowledge, and the dynamic analysis of the TCM zang-xing system.**
 
 ## 项目核心任务：解构中华传统多层关联系统（自然万物类象、藏象生理、人格认知、民俗决策体系），构建加权有向多层异质网络，提供标准化节点标注、关系权重标定、拓扑验证、AI 训诂工具链（规划方向：当前仅 README 示例代码，非已交付流水线），为古籍活化、本土心理建模、中医系统动力学、传统文化大模型语义锚定提供标准化行业通识数据集与代码框架。
 **Core task of the project: Deconstruct the multi-layered interconnection system of traditional Chinese culture (natural phenomena, internal organ physiology, personality cognition, folk decision-making system), construct a weighted directed multi-layer heterogeneous network, provide a complete tool chain for standardizing node labeling, relationship weight calibration, topological verification, and AI interpretation, and offer standardized industry general data sets and code frameworks for the activation of ancient books, the establishment of local psychological models, the system dynamics of traditional Chinese medicine, and the semantic anchoring of traditional culture large models.**
@@ -22,7 +22,7 @@ In the field of Chinese NLP, as well as in knowledge engineering and the digitiz
 **Core objective Through the visualization and quantitative modeling of collaborative workflows in Python or gephi, deconstruct the traditional Chinese axis cultural system of the Five Elements (the natural image of all things, the Tibetan image system, dynamic personality cognition, and the folk custom decision-making system), and construct a weighted directed multi-layer heterogeneous network. It provides a full-process toolchain including standardized node annotation, relationship weight calibration, topological verification, AI exegesis, offering standardized datasets and code frameworks for the activation of ancient books, local psychological modeling, the dynamic mechanism of the traditional Chinese medicine Zangxiang system, and the semantic anchoring of large models of traditional culture**
 
 1. Build the first machine-readable Ontology of the Five Elements, achieving the digitalization and structuring of the core of the Chinese axial culture knowledge system - the traditional Five elements and all things.
-2. Verify the topological assumption that "Five Elements is a third-order magic square core-edge structure with five nodes, 20 basic weighted directed edges, and a community power of five".
+2. Test the open topological hypothesis: whether the five-node, 20-weighted-directed-edge skeleton shows any core-periphery or community structure. At this stage only descriptive statistics of the K5 complete graph have been reproduced; core-periphery, community and small-world claims are not yet empirically supported.
 3. By establishing a mathematical model of the dynamic mechanism of the Five Elements network, it supports subsequent cross-text mining of Chinese nlp, machine learning and large models of ancient Chinese.
 4. Provide knowledge engineering underlying data and correct methodological support for the digitization of core ancient books, knowledge graph construction, and AI explainability research of the core cultural systems of the Huaxia axis such as  I Ching Graph Theory (Yitu Xue) and Xiangshu School.
 **This project applies network science methods to conduct quantitative modeling of classical Chinese correlative thought, with a focus on the Five Phases (Wuxing五行) system originating from the Chinese Axial Age. The modeling framework covers the full system of categorical correspondence (万物类象 wanwu leixiang), as well as ancient Chinese spatial orientation and temporal classification systems, all reconstructed from pre-modern textual sources.**
@@ -97,7 +97,7 @@ In the field of Chinese NLP, as well as in knowledge engineering and the digitiz
 
 文献出处口径（无征不信 / exegesis-first）：相生 5 条回标《春秋繁露·五行相生》（Weight=+1.0），相克 5 条回标《春秋繁露·五行相胜》（Weight=-0.5）；相泄 5 条（-0.8）、相耗 5 条（-1.0）共 10 条暂仅标注关系类型编号，待找到可靠传世原典出处后逐条补入 Label，不以后人附会预支。Only edges backed by verifiable transmitted-source citations carry a Label citation; relation types without a confirmed source remain blank rather than retrofitted. 完整一维长表 nodes.csv / edges.csv 仍在人工标注迭代中，暂未发布。
 
-核心拓扑结构可通过决策树、K近邻、随机森林等算法开展鲁棒性验证，校验网络结构的稳定性。
+（规划方向，当前尚未实现）核心拓扑结构后续可通过决策树、K近邻、随机森林等算法开展鲁棒性验证，校验网络结构稳定性；现阶段未运行上述算法，不产出对应指标。
 
 ### 七、 核心发现与待实证的假设
 ![输入图片说明](screenshot_225648.png)
@@ -200,7 +200,7 @@ def init_ark_client(api_key: str):
 # 3. 构造拓扑分析的Prompt（结合你的预处理结果）
 def build_topology_analysis_prompt():
     """结合节点表清洗、社区发现/随机森林/决策树预演结果，构造精准Prompt（请根据实际数据替换示例中的占位符内容）"""
-    # 示例：预处理后的关键信息（你实际的节点/算法结果）
+    # 格式占位示例（下列字段值均为虚构样例，非任何实测结果，须替换为真实数据）：预处理后的关键信息（你实际的节点/算法结果）
     preprocess_info = {
         "节点表维度": ["维度编号", "关系节点名", "属性列1", "属性列2"],
         "社区发现结果": "共识别出3个核心社区，社区1包含节点A/B/C，社区2包含节点D/E...",
@@ -283,7 +283,7 @@ if __name__ == "__main__":
 
 DeepSeek开放数据平台：https://platform.deepseek.com/usage
 
-火山引擎开放数据平台：http://volcengine.com/product/doubao
+火山引擎开放数据平台：https://www.volcengine.com/product/doubao
 
 火山引擎开放数据平台相关APU文档：http://api.volcengine.com/api-docs/view?action=AddGraphTables&version=2025-08-15&serviceCode=graph
 
