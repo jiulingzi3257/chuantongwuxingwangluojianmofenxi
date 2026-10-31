@@ -8,6 +8,9 @@
    G.get_edge_data(start,end) 反查，get_edge_data 返回属性 dict，
    next(iter(...values())) 取到标量后再下标会 TypeError，且 from/to 方向可能错位；
 4. pyvis 保存方法由不存在的 save_graph / 错误类名调用改为 write_html。
+5. 渲染层根治：cdn_resources="in_line" 将 vis-network 内联进单 HTML，规避 CDN
+   SRI/路径失效导致的空白；add_edge 的 arrows=True（vis-network 9.1.2 非法布尔）
+   改为合法字符串 arrows="to"，避免边处理阶段抛错中断渲染。
 
 口径说明（边界，勿外推为已完成能力）：
 - 本脚本用内置中文节点（木火土金水）与生克泄耗四类基础关系演示最小骨架；
@@ -70,7 +73,8 @@ for start, end, rel_type, weight in base_edges:
 
 # 6. 动态可视化：pyvis 直接建图，边属性（含 hover 说明）在 add_edge 时写入，
 #    不依赖 from_nx 之后对 net.edges 的反查（避免 from/to 与 nx 边方向错位）。
-net = Network(notebook=False, directed=True, height="800px", width="100%")
+net = Network(notebook=False, directed=True, height="800px", width="100%",
+              cdn_resources="in_line")
 
 for elem in five_elements:
     net.add_node(
@@ -83,10 +87,10 @@ for start, end, rel_type, weight in base_edges:
     net.add_edge(
         start, end,
         title=f"关系: {rel_type}\n权重: {weight}",
-        color=edge_color, width=abs(weight) * 2, arrows=True,
+        color=edge_color, width=abs(weight) * 2, arrows="to",
     )
 
-# 7. 写出交互式 HTML（输出到脚本所在目录；首次打开需联网加载 vis-network CDN）
+# 7. 写出交互式 HTML（vis-network 经 cdn_resources="in_line" 内联，断网可开；边箭头 arrows="to"）
 out_dir = os.path.dirname(os.path.abspath(__file__))
 out_path = os.path.join(out_dir, "五行核心基础网络框架.html")
 net.write_html(out_path)
