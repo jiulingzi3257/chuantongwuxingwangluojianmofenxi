@@ -294,7 +294,7 @@ YOUR_ENDPOINT_ID = "your_endpoint_id"
 analyze_network_topology(YOUR_API_KEY, YOUR_ENDPOINT_ID)
 ``
 ## 二、关键说明
-配置替换：** your_api_key**：从火山引擎方舟控制台获取的 API 密钥（注意保密，不要硬编码到代码仓库）；**your_endpoint_id**：你部署的模型端点 ID（需先在方舟控制台完成模型部署）。
+配置替换：**your_api_key**：从火山引擎方舟控制台获取的 API 密钥（注意保密，不要硬编码到代码仓库）；**your_endpoint_id**：你部署的模型端点 ID（需先在方舟控制台完成模型部署）。
 
 Prompt 优化： 示例中**preprocess_info**是占位符，需替换为你实际清洗后的节点表、社区发现 / 随机森林 / 决策树的输出结果；  分析要求可根据需求调整（比如增加「拓扑漏洞分析」「节点重要性排序」等）。
 
