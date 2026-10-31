@@ -609,8 +609,16 @@ DeepSeek 开放数据平台：https://platform.deepseek.com/usage
 
 ### 下载方法 
 ``:modelscope-code[]{type="sdk"}``
-``:modelscope-code[]{type="git"}``
+``#数据集下载
+from modelscope.msdatasets import MsDataset
+ds =  MsDataset.load('JiuLinZi3257/Network_modeling_analysis_based_on_traditional_Five_Elements_model')
+#您可按需配置 subset_name、split，参照“快速使用”示例代码``
 
+请确保 lfs 已经被正确安装
+
+``:modelscope-code[]{type="git"}``
+``git lfs install``
+`git clone https://oauth2:ms-5526ea7d-a368-4111-97b3-d01b266991e8@www.modelscope.cn/datasets/JiuLinZi3257/Network_modeling_analysis_based_on_traditional_Five_Elements_model.git`
 ### 数据清洗建议
 
 本项目原始二维宽表因保留多源异文，单元格内使用了多种全角标点分隔多维度属性。
