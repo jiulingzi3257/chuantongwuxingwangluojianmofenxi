@@ -607,8 +607,9 @@ DeepSeek 开放数据平台：https://platform.deepseek.com/usage
 
 > 数据集文件元信息以及数据文件，请浏览“数据集文件"页面或代码仓库获取。您也可以通过如下GIT Clone命令，或者ModelScope SDK来下载数据集
 
-### 下载方法 
+> ### 下载方法 
 ``:modelscope-code[]{type="sdk"}``
+
 ``#数据集下载
 from modelscope.msdatasets import MsDataset
 ds =  MsDataset.load('JiuLinZi3257/Network_modeling_analysis_based_on_traditional_Five_Elements_model')
@@ -617,6 +618,7 @@ ds =  MsDataset.load('JiuLinZi3257/Network_modeling_analysis_based_on_traditiona
 请确保 lfs 已经被正确安装
 
 ``:modelscope-code[]{type="git"}``
+
 ``git lfs install``
 `git clone https://oauth2:ms-5526ea7d-a368-4111-97b3-d01b266991e8@www.modelscope.cn/datasets/JiuLinZi3257/Network_modeling_analysis_based_on_traditional_Five_Elements_model.git`
 ### 数据清洗建议
