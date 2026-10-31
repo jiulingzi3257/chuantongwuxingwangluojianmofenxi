@@ -605,6 +605,12 @@ DeepSeek 开放数据平台：https://platform.deepseek.com/usage
 
 💡 提示：该 BibTeX 条目兼容 Zotero、Mendeley 与 LaTeX 标准编译链，可直接一键导入引用。
 
+> 数据集文件元信息以及数据文件，请浏览“数据集文件"页面或代码仓库获取。您也可以通过如下GIT Clone命令，或者ModelScope SDK来下载数据集
+
+### 下载方法 
+``:modelscope-code[]{type="sdk"}``
+``:modelscope-code[]{type="git"}``
+
 ### 数据清洗建议
 
 本项目原始二维宽表因保留多源异文，单元格内使用了多种全角标点分隔多维度属性。
