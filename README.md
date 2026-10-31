@@ -75,7 +75,7 @@ zh
 
 ### 四、数据目录（GitHub 副仓库的话在根目录，本仓库在 “项目数据” 文件夹里）
 
-五行万物类象表 - 3b874189 (2).xlsx（二维宽表人工标注底稿，703 条类象条目）
+五行万物类象表 - 3b874189 (2).xlsx（二维宽表人工标注模板：节点表 sheet1 非空格 282 行、权重表 sheet2 非空格 21 行；此为人工标注底稿规模，不等同于已建模节点数；完整一维长表 nodes.csv/edges.csv 尚未发布）
 
 五行基础模型 - 万物 nodes.xlsx（五行核心节点表：木火土金水 5 节点，Gephi 兼容列结构）
 
@@ -104,6 +104,8 @@ zh
 **已公开基础模型文件：项目数据/五行基础模型-万物nodes.xlsx 与 项目数据/五行基础模型edges类象关系表.xlsx，采用 Gephi / NetworkX 可直接导入的列结构 ——nodes 表含 Id、Label、Iswuxingcore、维度、wuxing label、wuxing Id；edges 表含 Source、Target、Type（Directed）、Kind、Id、Label、Weight。**
 
 **文献出处口径（无征不信）：相生 5 条回标《春秋繁露・五行相生》（Weight=+1.0），相克 5 条回标《春秋繁露・五行相胜》（Weight=-0.5）；相泄 5 条（-0.8）、相耗 5 条（-1.0）共 10 条暂仅标注关系类型编号，待找到可靠传世原典出处后逐条补入 Label，不以后人附会预支。**
+
+权重口径说明：建模脚本实际读取的权威权重以骨架 edges 表为准（相生 +1.0 / 相克 -0.5 / 相泄 -0.8 / 相耗 -1.0）；宽表 sheet2 的泄、耗数值为人读参考标注，与骨架权威值暂不一致，后续以骨架 edges 表为准统一；二进制宽表不在 README 文字修订范围内改动。
 
 核心拓扑结构可通过决策树、K 近邻、随机森林等算法开展鲁棒性验证，校验网络结构的稳定性。
 
@@ -284,7 +286,7 @@ except Exception as e:
 捕获其他通用异常
 print (f"API 调用异常：{str (e)}")
 5. 执行调用（替换为你的实际配置）
-if name == "main":
+if __name__ == "__main__":
 替换为你的真实 API Key 和 Endpoint ID（火山方舟控制台获取）
 YOUR_API_KEY = "your_api_key"
 YOUR_ENDPOINT_ID = "your_endpoint_id"
@@ -300,7 +302,7 @@ Prompt 优化： 示例中**preprocess_info**是占位符，需替换为你实�
 
 异常处理： 代码中捕获了 ArkError（方舟 API 专属异常）和通用异常，可根据实际需求扩展错误重试、告警等逻辑。
 
-##三、扩展场景（可选）
+## 三、扩展场景（可选）
 如果需要将本地预处理的节点表数据（CSV/Excel）直接传入 API，可在**preprocess_info**中补充数据样例（或文件链接），例如：
 ``import pandas as pd
 node_df = pd.read_csv ("清洗后的节点表.csv")
@@ -323,11 +325,11 @@ ai：古汉语大模型 - AI 太炎
 
 DeepSeek 开放数据平台：https://platform.deepseek.com/usage
 
-火山引擎开放数据平台：http://volcengine.com/product/doubao
+火山引擎开放数据平台：https://volcengine.com/product/doubao
 
-火山引擎开放数据平台相关 APU 文档：http://api.volcengine.com/api-docs/view?action=AddGraphTables&version=2025-08-15&serviceCode=graph
+火山引擎开放数据平台图数据库相关 的APU 文档：http://api.volcengine.com/api-docs/view?action=AddGraphTables&version=2025-08-15&serviceCode=graph
 
-古汉语大模型公开版：http://t.shenshen.wiki
+古汉语大模型公开版：http://t.shenshen.wiki （可达性待核，失效时以官方最新地址为准）​
 
 ### 参考文献（AI 文献综述在本仓库根目录里，仅供研究现状参考）：
 
@@ -498,7 +500,7 @@ DeepSeek 开放数据平台：https://platform.deepseek.com/usage
 
 > [80]Brooke J ,Aileen L ,David B . Trauma-focused psychotherapies for posttraumatic stress disorder (PTSD): A systematic review and network meta-analysis. [J]. Acta psychiatrica Scandinavica, 2021, 145 (2): 132-155.DOI:10.1111/ACPS.13366.
 
-> [81]H. J H ,J. D K . Network Analysis of Psychometric Life History Indicators. [J]. PERSONALITY AND INDIVIDUAL DIFFERENCES, 2021, 183
+> [81]H. J H ,J. D K . Network Analysis of Psychometric Life History Indicators. [J]. PERSONALITY AND INDIVIDUAL DIFFERENCES, 2021, 183.(作者全名、起止页码与 DOI 待补全核验；核验前不引用该条具体结论）
 
 > [82]Katja S ,Jessica F ,Lena D , et al. Psychological Network Analysis of General Self-Efficacy in High vs. Low Resilient Functioning Healthy Adults [J]. Frontiers Media S.A., 2021, 12 736147-736147. DOI:10.3389/FPSYT.2021.736147.
 
@@ -534,7 +536,7 @@ DeepSeek 开放数据平台：https://platform.deepseek.com/usage
 
 > [98] 莫凯洁，丘子靓，胡韧奋，王予沛。古汉语典故资源库的构建及应用研究 [J]. 中文信息学报，2024, 38 (11).https://github.com/KaijieMo-kj/Ancient-Chinese-Allusion-Resource-Database
 
-[> 99] 王兆基，张诗睿，胡韧奋，张学涛。古汉语通假字资源库的构建及应用研究 [J]. 中文信息学报，2024, 38 (03).https://github.com/frederick-wang/tongjiazi-resources
+> [99] 王兆基，张诗睿，胡韧奋，张学涛。古汉语通假字资源库的构建及应用研究 [J]. 中文信息学报，2024, 38 (03).https://github.com/frederick-wang/tongjiazi-resources
 
 >1. 核心文献参考节选：
 
@@ -543,7 +545,9 @@ DeepSeek 开放数据平台：https://platform.deepseek.com/usage
 > [1-2]〔隋〕萧吉。五行大义白话全解 [M]. 刘鸿玉，刘炳琳，译解。北京：气象出版社，2015.
 
 > [1-3]〔先秦 - 汉〕佚名。尚书正义 [M]. 孔安国，传。孔颖达，疏。十三经注疏本。北京：中华书局，1998. 周书・洪范第六.
---
+
+注：节点、关系边参考编号中 [2-1]–[2-3] 暂缺，现有条目自 [2-4] 起编号，待文献清单收敛后统一重排；缺号仅表示清单尚未整理完毕，不代表相关原典不存在。​
+​
 2. 节点、关系边参考：
 > [2-4]〔先秦 - 汉〕佚名。黄帝内经素问・灵枢 [M]. 李丽点校，梅花本。北京：人民卫生出版社，1963.
 
@@ -585,7 +589,7 @@ DeepSeek 开放数据平台：https://platform.deepseek.com/usage
 
 > 📖 引用与致谢（Citation & Acknowledgement）本项目致力于传统五行理论的结构化建模与开源共享。若您在本项目基础上开展研究、二次开发或产业应用，请按以下格式引用。
 > 📊 产业验证说明：本项目的核心数据与网络框架已在 ModelScope 社区获得超 423 次真实 AI 开发者下载与产业验证，相关实践反馈持续反哺本仓库的迭代优化。
-> 📄 BibTeX 引用 bibt
+> 📄  BibTeX 引用（bibtex）
 
 ``@misc{chuantongwuxing_network_2026,
   author       = {intellectualdisability-of-jun-sen},
@@ -607,7 +611,7 @@ DeepSeek 开放数据平台：https://platform.deepseek.com/usage
 建议可使用 [MarkItDown] 将 Excel 表格转换为 Markdown 格式，获得结构统一、易于解析的纯文本表格，再进行后续的拆分与结构化处理。
 MarkItDown 数据清洗阶段统一分隔符快速开始：
 -GitHub 工具包地址：https://github.com/microsoft/markitdown
-安装命令：pip install markitdown [all]
-使用示例：`markitdown 五行万物类象表.xlsx -o 清洗后.md
+安装命令：``pip install markitdown [all]``
+使用示例：`markitdown 五行万物类象表.xlsx -o 清洗后.md`
 
 ### 本项目镜像仓库：https://github.com/jiulingzi3257/chuantongwuxingwangluojianmofenxi
