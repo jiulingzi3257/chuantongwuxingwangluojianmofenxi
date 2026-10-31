@@ -14,6 +14,13 @@
 - 与两个 .xlsx 数字 Id（0-4）的对齐、以及核心-边缘/小世界等拓扑结论，
   属于另一数据层与统计检验任务，不在本脚本修复范围；当前 5 节点 20 边骨架
   不构成核心-边缘或小世界的实证证据（见《骨架拓扑复算说明.md》）。
+
+本轮渲染层修复（C-3，仅改可视化参数，节点与权重数据不变）：
+1. Network 构造补 cdn_resources="in_line"：vis-network 9.1.2 的 css/js 内联进单 HTML，
+   不再依赖会失效的外部 CDN（原默认 remote 分支引用的 cdnjs 资源含 SRI 校验，加载失败时画布空白）；
+2. add_edge 的 arrows=True 改为 arrows="to"：vis-network 9.1.2 的 edges.arrows 只接受
+   字符串或对象，布尔 true 会抛错并中断边渲染；
+3. 四类关系权重与生克泄耗口径维持原样（生 +1.0、克 -0.5、泄 -0.8、耗 -1.0），本次未改动任何数据。
 """
 import os
 import networkx as nx
@@ -70,7 +77,8 @@ for start, end, rel_type, weight in base_edges:
 
 # 6. 动态可视化：pyvis 直接建图，边属性（含 hover 说明）在 add_edge 时写入，
 #    不依赖 from_nx 之后对 net.edges 的反查（避免 from/to 与 nx 边方向错位）。
-net = Network(notebook=False, directed=True, height="800px", width="100%")
+net = Network(notebook=False, directed=True, height="800px", width="100%",
+              cdn_resources="in_line")
 
 for elem in five_elements:
     net.add_node(
@@ -83,10 +91,11 @@ for start, end, rel_type, weight in base_edges:
     net.add_edge(
         start, end,
         title=f"关系: {rel_type}\n权重: {weight}",
-        color=edge_color, width=abs(weight) * 2, arrows=True,
+        color=edge_color, width=abs(weight) * 2, arrows="to",
     )
 
-# 7. 写出交互式 HTML（输出到脚本所在目录；首次打开需联网加载 vis-network CDN）
+# 7. 写出交互式 HTML（输出到脚本所在目录；vis-network 资源经 cdn_resources="in_line"
+#    内联进单文件，无需联网加载外部 CDN；arrows 用字符串 "to"，为 vis-network 9.1.2 合法值）
 out_dir = os.path.dirname(os.path.abspath(__file__))
 out_path = os.path.join(out_dir, "五行核心基础网络框架.html")
 net.write_html(out_path)
