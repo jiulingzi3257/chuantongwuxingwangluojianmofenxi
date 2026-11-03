@@ -620,7 +620,7 @@ ds =  MsDataset.load('JiuLinZi3257/Network_modeling_analysis_based_on_traditiona
 ``:modelscope-code[]{type="git"}``
 
 ``git lfs install``
-`git clone https://oauth2:ms-5526ea7d-a368-4111-97b3-d01b266991e8@www.modelscope.cn/datasets/JiuLinZi3257/Network_modeling_analysis_based_on_traditional_Five_Elements_model.git`
+`git clone https://www.modelscope.cn/datasets/JiuLinZi3257/Network_modeling_analysis_based_on_traditional_Five_Elements_model.git`
 ### 数据清洗建议
 
 本项目原始二维宽表因保留多源异文，单元格内使用了多种全角标点分隔多维度属性。
